@@ -12,7 +12,7 @@
 ### Visualization of Records that have Hypertension by Features
 [Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/blob/main/Age%20Hypertension.png)  
 
-![](/Age%20Hypertension.png)   
+![](https://github.com/thomasalgenio/Thomas_Portfolio/blob/main/images/Age%20Hypertension.png)   
 
 [Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/blob/main/Income%20Hypertension.png)  
 
