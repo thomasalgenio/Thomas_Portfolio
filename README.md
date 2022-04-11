@@ -1,4 +1,4 @@
-# Thomas_Algenio_Portfolio
+# Thomas Algenio Data Science Portfolio
 ## Data Science Projects
 
 ### Healthcare Prediction Project:
