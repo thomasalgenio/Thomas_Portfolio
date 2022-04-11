@@ -7,7 +7,13 @@
 * Data engineered public health data
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict target variable (blood pressure)
 * Using metrics from output of model, insights gave information to predict Hypertension
-* Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.
+* Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.  
+
+### Visualization of Records that have Hypertension by Features
+[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/blob/main/Age%20Hypertension.png)
+[Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/blob/main/Income%20Hypertension.png)
+[Hypertension by Race](https://github.com/thomasalgenio/Sample_Projects/blob/main/Race%20Hypertension.png)
+[Hypertension by Sex](https://github.com/thomasalgenio/Sample_Projects/blob/main/Sex%20Hypertension.png)  
 
 ### NLP Sentiment Analysis Projects:
 [Amazon Collagen Reviews](https://github.com/thomasalgenio/Sample_Projects/blob/main/NLP%20Sentiment%20Analysis%20Amazon%20Collagen.ipynb)  
