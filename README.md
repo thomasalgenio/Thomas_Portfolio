@@ -12,19 +12,19 @@
 ### Visualization of Records that have Hypertension by Features
 [Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/blob/main/Age%20Hypertension.png)  
 
-![](/blob/main/Age%20Hypertension.png)   
+![](/images/Age%20Hypertension.png)   
 
 [Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/blob/main/Income%20Hypertension.png)  
 
-![](/images/Age%20Hypertension.png)  
+![](/images/Income%20Hypertension.png)  
 
 [Hypertension by Race](https://github.com/thomasalgenio/Sample_Projects/blob/main/Race%20Hypertension.png)  
 
-![](main/Race%20Hypertension.png) 
+![](/images/Race%20Hypertension.png) 
 
 [Hypertension by Sex](https://github.com/thomasalgenio/Sample_Projects/blob/main/Sex%20Hypertension.png)   
 
-![](https://github.com/thomasalgenio/Sample_Projects/blob/main/Sex%20Hypertension.png)   
+![](/images/Sex%20Hypertension.png)   
 
 ### NLP Sentiment Analysis Projects:
 [Amazon Collagen Reviews](https://github.com/thomasalgenio/Sample_Projects/blob/main/NLP%20Sentiment%20Analysis%20Amazon%20Collagen.ipynb)  
