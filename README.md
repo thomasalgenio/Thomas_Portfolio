@@ -16,7 +16,7 @@
 
 [Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/blob/main/Income%20Hypertension.png)  
 
-![](/main/Income%20Hypertension.png)  
+![](/images/Age%20Hypertension.png)  
 
 [Hypertension by Race](https://github.com/thomasalgenio/Sample_Projects/blob/main/Race%20Hypertension.png)  
 
