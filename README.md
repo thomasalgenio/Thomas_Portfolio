@@ -4,7 +4,7 @@
 ### Healthcare Prediction Project:
 * [Predicting Hypertension](https://github.com/thomasalgenio/Sample_Projects/blob/main/Predicting%20Hypertension%20%26%20Symptoms.ipynb)
 
-/n Data engineered public health data
+\n Data engineered public health data
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict target variable (blood pressure)
 * Using metrics from output of model, insights gave information to predict Hypertension
 * Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.
