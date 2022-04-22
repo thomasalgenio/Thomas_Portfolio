@@ -40,7 +40,7 @@
 * Optimized different models including Linear Regression, Random Forest, XGBoost, and Unigrams to output the best results
 * Business Decisions explored using model results
 
-### Regression and Binary Model Projects:
+### Regression and Classification Model Projects:
 [Bank Loan Prediction](https://github.com/thomasalgenio/Sample_Projects/blob/main/Bank%20Loan%20Prediction.ipynb)  
 [Diamond Prices](https://github.com/thomasalgenio/Sample_Projects/blob/main/Predicting%20Diamond%20Prices.ipynb)  
 [Predicting Vehicle Prices](https://github.com/thomasalgenio/Sample_Projects/blob/main/Regression%20Model%20for%20Web%20Scraped%20Vehicle%20Data.ipynb)  
