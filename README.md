@@ -49,3 +49,8 @@
 * Data engineered public data
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict continuous target variable
 * Used metrics from models to understand key insights and predict future outcomes
+
+### Contribution to published article from Medium - Analytics Vidhya:
+[Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
+
+* Background - Author Presented solution to data problem of matching Pandas Columns using Python Package Fuzzy Wuzzy. Although an informative article, there was a missing piece (data type) to be considered - nulls. Had brought up the problem - not just records that contained strings of "Null" or "NaN" but actual nulls which affected the shape of dataframes when conducting comparison. Author was able to resolve issue and credited myself with a small contribution within the matching data solution.
