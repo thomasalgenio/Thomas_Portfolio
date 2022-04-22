@@ -9,7 +9,7 @@
 * Using metrics from output of model, insights gave information to predict Hypertension
 * Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.  
 
-### Visualization of Records that have Hypertension by Features
+### Visualizations of Features from Hypertension Insights
 [Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/blob/main/Age%20Hypertension.png)  
 
 ![](images/Age%20Hypertension.png)
