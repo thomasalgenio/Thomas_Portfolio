@@ -2,6 +2,7 @@
 
 ## Contributions
 [Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
+
 * Identified and resolved a missing edge case in the article, "Matching Messy Pandas Columns with FuzzyWuzzy," published on Medium by Analytics Vidhya ([2020]).
 * Collaborated with the author to ensure comprehensive coverage of all potential use cases, improving the article's accuracy and completeness.
 
