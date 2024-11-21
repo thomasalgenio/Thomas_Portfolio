@@ -1,6 +1,10 @@
 # Thomas Algenio Data Science Portfolio
 ## Data Science Projects
 
+### Computer Vision Projects
+[Face Detection on AI Generated Images]
+(https://github.com/ddaviddn/cda_fall2023_project)
+
 ### Healthcare Prediction Project:
 [Predicting Hypertension](https://github.com/thomasalgenio/Sample_Projects/blob/main/Predicting%20Hypertension%20%26%20Symptoms.ipynb)  
 
