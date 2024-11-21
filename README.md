@@ -61,4 +61,3 @@
 * Data engineered public data
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict continuous target variable
 * Used metrics from models to understand key insights and predict future outcomes
-
