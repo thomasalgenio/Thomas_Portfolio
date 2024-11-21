@@ -5,6 +5,7 @@
 
 * Identified and resolved a missing edge case in the article, "Matching Messy Pandas Columns with FuzzyWuzzy," published on Medium by Analytics Vidhya and written by Khalid El Mouloudi ([2020]).
 * Collaborated with the author to ensure comprehensive coverage of all potential use cases, improving the article's accuracy and completeness.
+* Detailed Solution: Author Presented solution to data problem of matching Pandas Columns using Python Package Fuzzy Wuzzy. Although an informative article, there was a missing edge case / (data type) to be considered - _nulls_. Discussed with author that not only strings of _Null_ or _NaN_ should be considered but actual value types that are _null_ which affected the shape of dataframes when conducting the nlp comparison. Author was able to update the issue and generously credited myself with a contribution in the matching data solution.
 
 ## Data Science Projects
 
@@ -61,7 +62,3 @@
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict continuous target variable
 * Used metrics from models to understand key insights and predict future outcomes
 
-### Contribution to published article from Medium - Analytics Vidhya:
-[Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
-
-* Background - Author Presented solution to data problem of matching Pandas Columns using Python Package Fuzzy Wuzzy. Although an informative article, there was a missing piece (data type) to be considered - nulls. Had brought up the problem - not just records that contained strings of "Null" or "NaN" but actual nulls which affected the shape of dataframes when conducting comparison. Author was able to resolve issue and credited myself with a small contribution within the matching data solution.
