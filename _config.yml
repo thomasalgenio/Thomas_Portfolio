@@ -2,6 +2,3 @@ theme: jekyll-theme-cayman
 title: Thomas Algenio
 description: Data Science Portfolio
 custom_link: https://github.com/thomasalgenio/Sample_Projects/tree/main
-<p class="github">
-  <a href="{{ site.custom_link }}" target="_blank">Visit My Work</a>
-</p>
