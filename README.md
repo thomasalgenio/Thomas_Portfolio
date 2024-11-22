@@ -1,6 +1,6 @@
 # Thomas Algenio - Data Science Portfolio
 
-Please Refer to {thomasalgenio/Sample_Projects} for sample work
+Please Refer to **[thomasalgenio/Sample_Projects](https://github.com/thomasalgenio/Sample_Projects/tree/main)** for **sample work** or **click any link below**.
 
 ## Contributions
 [Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
