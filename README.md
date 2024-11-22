@@ -22,11 +22,21 @@
 * Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.  
 
 ### Visualizations of Features from Hypertension Insights
-[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension)  
+[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension/)  
 
-![](/Hypertension%20Visualizations/Age%20Hypertension.png)
+![](Hypertension%20Visualizations/Age%20Hypertension.png)
 
+[Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension)  
 
+![](/Hypertension%20Visualizations/Income%20Hypertension.png)
+
+[Hypertension by Race](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension)  
+
+![](/Hypertension%20Visualizations/Race%20Hypertension.png)
+
+[Hypertension by Sex](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension)   
+
+![](/Hypertension%20Visualizations/Sex%20Hypertension.png)
 
 ### NLP Sentiment Analysis Projects:
 [Amazon Collagen Reviews](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)  
