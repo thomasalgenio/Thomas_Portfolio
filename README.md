@@ -1,5 +1,7 @@
 # Thomas Algenio - Data Science Portfolio
 
+Please Refer to {thomasalgenio/Sample_Projects} for sample work
+
 ## Contributions
 [Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
 
