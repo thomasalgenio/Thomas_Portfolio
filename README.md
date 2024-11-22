@@ -1,4 +1,4 @@
-_Hello & Welcome to my Portfolio! Below you can find a brief description about the type of projects I worked on. Feel free to click on any link to dive further into the code & analysis of the projects. Thank you!_
+<small>_Hello & Welcome to my Portfolio! Below you can find a brief description about the type of projects I worked on. Feel free to click on any link to dive further into the code & analysis of the projects. Thank you!_<snall>
 
 ## Data Science Sample Work & Contributions
 ## Contributions
