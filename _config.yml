@@ -1,1 +1,59 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: Thomas Algenio - Data Science Portfolio
+description: Explore my projects and data science journey.
+url: https://your-username.github.io/your-repository-name
+baseurl: "" # Leave blank unless your site is in a subdirectory
+
+# Theme configuration
+theme: jekyll-theme-cayman # Specify the Cayman theme
+
+# Markdown processor
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed # Automatically generates an RSS feed
+  - jekyll-seo-tag # Adds SEO metadata
+  - jekyll-sitemap # Generates a sitemap for search engines
+
+# Author information
+author:
+  name: Thomas Algenio
+  email: your-email@example.com
+
+# Social links
+github_username: your-github-username # Replace with your GitHub username
+linkedin: https://linkedin.com/in/your-profile # Replace with your LinkedIn URL
+twitter: https://twitter.com/your-username # Optional: Replace with your Twitter handle
+
+# Optional defaults for new posts/pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Thomas Algenio
+
+# Custom SEO settings
+seo:
+  title: "Thomas Algenio's Portfolio"
+  description: "A curated collection of data science projects by Thomas Algenio."
+  social:
+    twitter: your-twitter-handle
+
+# Output configuration
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Sitemap settings
+sitemap:
+  changefreq: weekly
+  priority: 1.0
+
+# RSS feed settings
+feed:
+  path: feed.xml
