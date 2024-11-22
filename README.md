@@ -1,4 +1,5 @@
-_refer to links below_
+Hello & Welcome to my Portfolio! Below you can find a brief description about the type of projects I worked on. Feel free to click on any link to dive further into the code & analysis of the projects. Thank you!
+
 ## Data Science Sample Work & Contributions
 ## Contributions
 [Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
