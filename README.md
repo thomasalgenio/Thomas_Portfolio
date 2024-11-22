@@ -10,7 +10,7 @@
 ## Data Science Projects
 
 ### Computer Vision Projects
-[Face Detection on AI Generated Images](https://github.com/ddaviddn/cda_fall2023_project)
+[Face Detection on AI Generated Images](https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images)
 * Face detection on AI images. Classification/decomposition of image to find real faces vs. AI-generated faces
 
 ### Healthcare Prediction Project:
