@@ -14,7 +14,7 @@
 * Face detection on AI images. Classification/decomposition of image to find real faces vs. AI-generated faces
 
 ### Healthcare Prediction Project:
-[Predicting Hypertension](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension)  
+[Predicting Hypertension](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension)  
 
 * Data engineered public health data
 * Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict target variable (blood pressure)
@@ -22,9 +22,9 @@
 * Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.  
 
 ### Visualizations of Features from Hypertension Insights
-[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/blob/main/Hypertension/Hypertension%20Visualizations/Visualizations%20Age%20Hypertension.png)  
+[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/tree/2093d0f8eacd5b659ca3a5d3557b715c9a2854c8/Hypertension/Hypertension%20Visualizations)  
 
-![](images/Age%20Hypertension.png)
+![](/Age%20Hypertension.png)
 
 [Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/blob/main/Hypertension/Hypertension%20Visualizations/Income%20Hypertension.png)  
 
