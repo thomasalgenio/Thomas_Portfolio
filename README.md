@@ -2,14 +2,16 @@ Hello! Explore my projects below
 
 ---
 
-## Data Science Projects
 
-### Contributions
+
+## Contributions
 <div class="projects">
   <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">Matching Messy Pandas Columns<br><small>FuzzyWuzzy Contribution</small></a>
 </div>
 
 ---
+
+## Data Science Projects
 
 ### Computer Vision Projects
 <div class="projects">
