@@ -1,5 +1,3 @@
-# Welcome to My Portfolio
-
 Hello! Explore my projects below
 
 ---
