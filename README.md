@@ -1,63 +1,39 @@
-<small>_Hello & Welcome to my Portfolio! Below you can find a brief description about the type of projects I worked on. Feel free to click on any link to dive further into the code & analysis of the projects. Thank you!_<snall>
+# Welcome to My Portfolio
 
-## Data Science Sample Work & Contributions
-## Contributions
-[Matching Messy Pandas columns with FuzzyWuzzy](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
+Hello! Explore my projects below.
 
-* Identified and resolved a missing edge case in the article, "Matching Messy Pandas Columns with FuzzyWuzzy," published on Medium by Analytics Vidhya and written by Khalid El Mouloudi ([2020]).
-* Collaborated with the author to ensure comprehensive coverage of all potential use cases, improving the article's accuracy and completeness.
+---
 
-### Computer Vision Projects
-[Face Detection on AI Generated Images](https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images)
-* Face detection on AI images. Classification/decomposition of image to find real faces vs. AI-generated faces
+## Data Science Projects
 
-### NLP Sentiment Analysis Projects:
-[Amazon Collagen Reviews](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)  
-[Amazon Preworkout Reviews](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)  
-[Twitter Gillette Unigram Model](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)  
-[Twitter #boycottgillette](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)  
-[Twitter #gillettead](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)  
-[Twitter #toxicmasculinity](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)  
-[Yelp Resturaunt Reviews](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp)  
+### Contributions
+[![Matching Messy Pandas Columns](https://img.shields.io/badge/View-FuzzyWuzzy%20Contribution-blue)](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
 
-* Web Scraped unstructured text data from multiple sources (e.g. Amazon Reviews, Yelp Restaurant Reviews, Twitter hashtags, etc.)
-* Cleaned, Transformed, and Formatted data to be reusable in modeling process
-* Optimized different models including Linear Regression, Random Forest, XGBoost, and Unigrams to output the best results
-* Business Decisions explored using model results
+---
 
-### Regression and Classification Model Projects:
-[Predicting Bank Loan Approval](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction)  
-[Predicting Diamond Prices](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction)  
-[Predicting Used Vehicle Prices](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Used_Vehicles_Prediction)  
-[Predicting Homes Prices](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Real_Estate_Prices_Prediction)  
+### Computer Vision
+[![View Face Detection Project](https://img.shields.io/badge/View-Face%20Detection-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images)
 
-* Data engineered public data
-* Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict continuous target variable
-* Used metrics from models to understand key insights and predict future outcomes
+---
 
-### Healthcare Prediction Project:
-[Predicting Hypertension](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)  
+### NLP Sentiment Analysis
+[![View Collagen Reviews](https://img.shields.io/badge/View-Collagen%20Reviews-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
+[![View Preworkout Reviews](https://img.shields.io/badge/View-Preworkout%20Reviews-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
+[![View Gillette Unigram Model](https://img.shields.io/badge/View-Gillette%20Unigram-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
+[![View #BoycottGillette Analysis](https://img.shields.io/badge/View-BoycottGillette-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
+[![View #GilletteAd Analysis](https://img.shields.io/badge/View-GilletteAd-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
+[![View Yelp Restaurant Reviews](https://img.shields.io/badge/View-Yelp%20Reviews-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp)
 
-* Data engineered public health data
-* Optimized different models including Logistic Regression, Random Forest, XGBoost, and Aritficial Nerual Networks to predict target variable (blood pressure)
-* Using metrics from output of model, insights gave information to predict Hypertension
-* Further analysis not only shared prediction to Hypertension but features (symptoms) that strongly cause the disease.  
+---
 
-### Visualizations of Features from Hypertension Insights
-[Hypertension by Age](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)  
+### Regression Models
+[![View Bank Loan Approval](https://img.shields.io/badge/View-Bank%20Loan%20Approval-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction)
+[![View Diamond Prices](https://img.shields.io/badge/View-Diamond%20Prices-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction)
+[![View Used Vehicle Prices](https://img.shields.io/badge/View-Used%20Vehicle%20Prices-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Used_Vehicles_Prediction)
+[![View Home Prices](https://img.shields.io/badge/View-Home%20Prices-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Real_Estate_Prices_Prediction)
 
-![](images/Age%20Hypertension.png)
+---
 
-[Hypertension by Income](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)  
-
-![](images/Income%20Hypertension.png)
-
-[Hypertension by Race](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)  
-
-![](images/Race%20Hypertension.png)
-
-[Hypertension by Sex](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)  
-
-![](images/Sex%20Hypertension.png)
-
-Contribution Detailed Solution: Author Presented solution to data problem of matching Pandas Columns using Python Package Fuzzy Wuzzy. Although an informative article, there was a missing edge case / (data type) to be considered - _nulls_. Discussed with author that not only strings of _Null_ or _NaN_ should be considered but actual value types that are _null_ which affected the shape of dataframes when conducting the nlp comparison. Author was able to update the issue and generously credited myself with a contribution in the matching data solution.
+### Healthcare
+[![View Hypertension Predictions](https://img.shields.io/badge/View-Hypertension-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)
+[![View Hypertension Insights](https://img.shields.io/badge/View-Hypertension%20Insights-blue)](https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction)
