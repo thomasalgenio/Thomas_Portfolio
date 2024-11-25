@@ -61,12 +61,6 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
 ---
 
 ### Regression Analysis
-- **Predicting Bank Loan Approval**
-  - Developed predictive models to assess bank loan approvals.
-  - Engineered features to improve model accuracy.
-  - Applied Random Forest and Logistic Regression models.
-  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction)
-
 - **Predicting Diamond Prices**
   - Built regression models to predict diamond prices.
   - Engineered features to improve price prediction accuracy.
@@ -99,3 +93,9 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
   - Provided feature importance analysis using XGBoost models.
   - Suggested actionable recommendations for healthcare professionals.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction)
+ 
+- **Predicting Bank Loan Approval**
+  - Developed predictive models to assess bank loan approvals.
+  - Engineered features to improve model accuracy.
+  - Applied Random Forest and Logistic Regression models.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction)
