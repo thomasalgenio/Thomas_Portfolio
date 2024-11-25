@@ -34,7 +34,7 @@
       }
 
       main {
-        max-width: 1100px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
       }
@@ -54,20 +54,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
-        align-items: start;
+        justify-content: start;
       }
 
       .projects {
         display: grid;
-        gap: 20px;
         grid-template-columns: repeat(3, 1fr);
-        justify-items: stretch;
+        gap: 20px;
+        align-items: start;
+        justify-content: start;
       }
 
       .project-card {
         width: 100%;
         max-width: 300px;
-        height: 250px;
         background: white;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -155,19 +155,6 @@
       <section>
         <h2>Data Science Projects</h2>
         <div class="grid-subcategories">
-          <!-- Contributions -->
-          <div>
-            <h3>Contributions</h3>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Matching Messy Pandas Columns</h3>
-                <p>Resolved missing edge cases in fuzzy matching logic.</p>
-                <p>Collaborated with the author to improve accuracy.</p>
-                <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-              </div>
-            </div>
-          </div>
-
           <!-- Computer Vision -->
           <div>
             <h3>Computer Vision</h3>
@@ -208,9 +195,26 @@
                 <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
               </div>
               <div class="project-card">
-                <h3>Predicting Used Vehicle Prices</h3>
-                <p>Developed predictive models for used vehicle prices.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
+                <h3>Predicting Home Prices</h3>
+                <p>Built models to predict real estate prices accurately.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Classification Analysis -->
+          <div>
+            <h3>Classification Analysis</h3>
+            <div class="projects">
+              <div class="project-card">
+                <h3>Predicting Hypertension</h3>
+                <p>Analyzed public health data to predict hypertension.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
+              </div>
+              <div class="project-card">
+                <h3>Predicting Bank Loan Approval</h3>
+                <p>Developed predictive models to assess bank loan approvals.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
               </div>
             </div>
           </div>
