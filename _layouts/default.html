@@ -54,14 +54,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
-        justify-items: start; /* Move Contributions further left */
         align-items: start;
       }
 
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(2, 1fr); /* Ensures 2 columns */
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
       }
 
@@ -125,6 +124,10 @@
         margin-bottom: 30px;
       }
 
+      .left-align {
+        text-align: left;
+      }
+
       @media (max-width: 768px) {
         .grid-2-columns {
           grid-template-columns: 1fr;
@@ -150,10 +153,10 @@
       <!-- Top Row: Contributions and Data Science Projects -->
       <section class="grid-2-columns">
         <!-- Contributions -->
-        <div>
+        <div class="left-align">
           <h2>Contributions</h2>
           <div class="projects">
-            <div class="project-card">
+            <div class="project-card" style="justify-self: start;">
               <h3>Matching Messy Pandas Columns</h3>
               <p>Resolved missing edge cases in fuzzy matching logic.</p>
               <p>Collaborated with the author to improve accuracy.</p>
