@@ -4,6 +4,8 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
 
 ---
 
+## Data Science Projects & Contributions
+
 ## Contributions
 - **Matching Messy Pandas Columns**
   - Resolved missing edge cases in fuzzy matching logic.
@@ -12,8 +14,6 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
   - [View Article](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
 
 ---
-
-## Data Science Projects
 
 ### Computer Vision
 - **Face Detection Project**
