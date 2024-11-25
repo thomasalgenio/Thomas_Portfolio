@@ -6,6 +6,7 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+      /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -52,20 +53,22 @@
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center; /* Centers the cards */
       }
 
       .project-card {
+        width: 250px; /* Square dimensions */
+        height: 250px;
         background: white;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        transition: transform 0.2s;
-        height: 100%; /* Ensures all cards are the same height */
+        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: center;
+        transition: transform 0.2s;
       }
 
       .project-card:hover {
@@ -73,19 +76,20 @@
       }
 
       .project-card h3 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 10px;
+        color: #157878;
       }
 
       .project-card p {
         font-size: 0.9rem;
         color: #555;
-        margin-bottom: 15px;
+        margin: 10px 0;
       }
 
       .btn {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 8px 12px;
         background-color: #157878;
         color: white;
         text-decoration: none;
@@ -120,8 +124,8 @@
         <div class="projects">
           <div class="project-card">
             <h3>Matching Messy Pandas Columns</h3>
-            <p>Identified and resolved a missing edge case in the article, improving accuracy.</p>
-            <p>Collaborated with the author to ensure comprehensive coverage of use cases.</p>
+            <p>Resolved missing edge cases in fuzzy matching logic.</p>
+            <p>Collaborated with the author to improve accuracy.</p>
             <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Project</a>
           </div>
         </div>
@@ -131,91 +135,40 @@
       <section>
         <h2>Data Science Projects</h2>
 
-        <!-- Computer Vision -->
         <div class="projects">
           <div class="project-card">
             <h3>Face Detection Project</h3>
             <p>Performed face detection on AI-generated images.</p>
-            <p>Developed models to differentiate real faces from AI-generated ones.</p>
+            <p>Developed models to classify real and AI-generated faces.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
           </div>
-        </div>
 
-        <!-- NLP Sentiment Analysis -->
-        <h3 style="text-align: center;">NLP Sentiment Analysis</h3>
-        <div class="projects">
           <div class="project-card">
             <h3>Amazon Collagen Reviews</h3>
-            <p>Scraped unstructured text data from Amazon reviews.</p>
-            <p>Optimized models including Linear Regression and Random Forest.</p>
+            <p>Sentiment analysis of customer reviews on Amazon.</p>
+            <p>Optimized models for better accuracy.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
           </div>
 
           <div class="project-card">
             <h3>Amazon Preworkout Reviews</h3>
-            <p>Sentiment analysis for customer reviews on preworkout products.</p>
-            <p>Derived insights using NLP pipelines and modeling techniques.</p>
+            <p>Analyzed preworkout product reviews on Amazon.</p>
+            <p>Derived insights using NLP models.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
           </div>
 
           <div class="project-card">
-            <h3>Twitter Gillette Unigram Model</h3>
-            <p>Analyzed Twitter sentiment regarding the #GilletteAd campaign.</p>
-            <p>Used unigram modeling to classify sentiment effectively.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-
-          <div class="project-card">
             <h3>Twitter #BoycottGillette</h3>
-            <p>Explored Twitter reactions for the #BoycottGillette movement.</p>
-            <p>Visualized sentiment changes across time.</p>
+            <p>Explored Twitter sentiment on the #BoycottGillette campaign.</p>
+            <p>Visualized public sentiment trends over time.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
           </div>
 
-          <div class="project-card">
-            <h3>Twitter #GilletteAd</h3>
-            <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-            <p>Developed insights using NLP sentiment models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Yelp Restaurant Reviews</h3>
-            <p>Extracted insights from Yelp reviews for restaurants.</p>
-            <p>Performed sentiment classification using NLP models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-          </div>
-        </div>
-
-        <!-- Regression Models -->
-        <h3 style="text-align: center;">Regression Models</h3>
-        <div class="projects">
           <div class="project-card">
             <h3>Predicting Bank Loan Approval</h3>
-            <p>Built predictive models using Logistic Regression and Random Forest.</p>
-            <p>Provided actionable insights for financial decision-making.</p>
+            <p>Developed predictive models for bank loan approvals.</p>
+            <p>Used Random Forest and Logistic Regression.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Predicting Diamond Prices</h3>
-            <p>Engineered features to improve diamond price predictions.</p>
-            <p>Applied advanced regression models to refine accuracy.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction" class="btn">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Predicting Used Vehicle Prices</h3>
-            <p>Analyzed features to predict used vehicle prices accurately.</p>
-            <p>Optimized performance using XGBoost and Random Forest.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Used_Vehicles_Prediction" class="btn">View Project</a>
-          </div>
-
-          <div class="project-card">
-            <h3>Predicting Home Prices</h3>
-            <p>Developed machine learning models to predict real estate prices.</p>
-            <p>Leveraged feature engineering to optimize accuracy.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Real_Estate_Prices_Prediction" class="btn">View Project</a>
           </div>
         </div>
       </section>
@@ -226,8 +179,8 @@
         <div class="projects">
           <div class="project-card">
             <h3>Predicting Hypertension</h3>
-            <p>Engineered public health data to predict hypertension effectively.</p>
-            <p>Applied XGBoost for feature importance and actionable insights.</p>
+            <p>Predicted hypertension using health data and ML models.</p>
+            <p>Provided actionable insights using XGBoost.</p>
             <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
           </div>
         </div>
