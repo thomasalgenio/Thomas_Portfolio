@@ -6,6 +6,7 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+      /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -38,21 +39,50 @@
         padding: 20px;
       }
 
-      /* Project Buttons */
-      .projects a.btn {
+      /* Projects Grid */
+      .projects {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-top: 20px;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .project-card p {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      .btn {
         display: inline-block;
-        margin: 10px 0;
-        padding: 10px 15px;
+        padding: 10px 20px;
         background-color: #157878;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
-        text-align: center;
         transition: background-color 0.3s;
       }
 
-      .projects a.btn:hover {
+      .btn:hover {
         background-color: #104f5b;
       }
 
@@ -63,15 +93,6 @@
         padding: 10px;
         margin-top: 20px;
       }
-
-      /* Ensure Readable Spacing */
-      section {
-        margin-bottom: 20px;
-      }
-
-      h2, h3 {
-        color: #157878;
-      }
     </style>
   </head>
   <body>
@@ -81,10 +102,45 @@
     </header>
 
     <main>
-      <!-- Dynamically Render All Markdown Content -->
-      <div class="content">
-        {{ content }}
-      </div>
+      <section>
+        <!-- Inject All Markdown Content -->
+        <div class="content">
+          {{ content }}
+        </div>
+      </section>
+
+      <section class="projects">
+        <!-- Add Project Cards for a Clean Layout -->
+        <div class="project-card">
+          <h3>Matching Messy Pandas Columns</h3>
+          <p>Improved data accuracy by resolving edge cases in fuzzy matching.</p>
+          <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Face Detection Project</h3>
+          <p>Detecting real vs AI-generated faces using computer vision techniques.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Amazon Collagen Reviews</h3>
+          <p>Sentiment analysis of customer reviews using NLP techniques.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Predicting Bank Loan Approval</h3>
+          <p>Machine learning models to predict loan approval probabilities.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Predicting Hypertension</h3>
+          <p>Machine learning models for healthcare predictions and insights.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
+        </div>
+      </section>
     </main>
 
     <footer>
