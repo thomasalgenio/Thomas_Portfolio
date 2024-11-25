@@ -1,18 +1,18 @@
-# Welcome to My Portfolio
-
-Explore my projects below. Each includes an actionable button to view the work.
+Hello! Explore my projects below.
 
 ---
 
-## Data Science Projects
-
-### Contributions
+## Contributions
 <div class="projects">
   <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">Matching Messy Pandas Columns</a>
 </div>
 
 - Identified and resolved a missing edge case in the article, improving the accuracy of its solution.
 - Collaborated with the author to ensure comprehensive coverage of all potential use cases.
+
+---
+
+## Data Science Projects
 
 ---
 
