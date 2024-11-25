@@ -1,4 +1,27 @@
 theme: jekyll-theme-cayman
 title: Thomas Casino Algenio Portfolio
 description: Data Scientist, M.S. Georgia Tech Student
-custom_link: https://github.com/thomasalgenio/Sample_Projects/tree/main
+baseurl: "" # Leave blank for root deployment
+url: "https://thomasalgenio.github.io" # Replace <your-github-username> with your username
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Navigation links
+nav:
+  - title: Home
+    url: "/"
+  - title: About
+    url: "/about.html"
+  - title: Projects
+    url: "/projects.html"
+  - title: Contact
+    url: "/contact.html"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
