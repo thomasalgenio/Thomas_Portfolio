@@ -50,9 +50,9 @@
         text-align: center;
       }
 
-      .two-column-grid {
+      .grid-layout {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
       }
 
@@ -149,10 +149,10 @@
         </div>
       </section>
 
-      <!-- Two-Column Grid Section -->
+      <!-- Two-Column Layout -->
       <section>
-        <div class="two-column-grid">
-          <!-- Computer Vision -->
+        <div class="grid-layout">
+          <!-- Column 1: Computer Vision and Regression -->
           <div>
             <h2>Computer Vision</h2>
             <div class="projects">
@@ -163,9 +163,31 @@
                 <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
               </div>
             </div>
+
+            <h2>Regression Analysis</h2>
+            <div class="projects">
+              <div class="project-card">
+                <h3>Predicting Diamond Prices</h3>
+                <p>Engineered features to improve diamond price predictions.</p>
+                <p>Applied advanced regression models to refine accuracy.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction" class="btn">View Project</a>
+              </div>
+              <div class="project-card">
+                <h3>Predicting Used Vehicle Prices</h3>
+                <p>Analyzed features to predict used vehicle prices accurately.</p>
+                <p>Optimized performance using XGBoost and Random Forest.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Used_Vehicles_Prediction" class="btn">View Project</a>
+              </div>
+              <div class="project-card">
+                <h3>Predicting Home Prices</h3>
+                <p>Developed machine learning models to predict real estate prices.</p>
+                <p>Leveraged feature engineering to optimize accuracy.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Real_Estate_Prices_Prediction" class="btn">View Project</a>
+              </div>
+            </div>
           </div>
 
-          <!-- NLP Sentiment Analysis -->
+          <!-- Column 2: NLP Sentiment and Classification -->
           <div>
             <h2>NLP Sentiment Analysis</h2>
             <div class="projects">
@@ -177,34 +199,24 @@
               </div>
               <div class="project-card">
                 <h3>Twitter #BoycottGillette</h3>
-                <p>Analyzed Twitter sentiment for #BoycottGillette.</p>
+                <p>Explored Twitter sentiment for #BoycottGillette.</p>
                 <p>Visualized trends over time.</p>
                 <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
               </div>
             </div>
-          </div>
 
-          <!-- Regression -->
-          <div>
-            <h2>Regression Analysis</h2>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Predicting Diamond Prices</h3>
-                <p>Engineered features for diamond price predictions.</p>
-                <p>Refined accuracy with advanced models.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction" class="btn">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Classification -->
-          <div>
             <h2>Classification Analysis</h2>
             <div class="projects">
               <div class="project-card">
                 <h3>Predicting Hypertension</h3>
-                <p>Engineered health data for hypertension predictions.</p>
-                <p>Applied XGBoost for insights.</p>
+                <p>Engineered public health data to predict hypertension effectively.</p>
+                <p>Applied XGBoost for feature importance and actionable insights.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
+              </div>
+              <div class="project-card">
+                <h3>Hypertension Insights</h3>
+                <p>Generated insights from health data for hypertension risks.</p>
+                <p>Provided recommendations for healthcare professionals.</p>
                 <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
               </div>
             </div>
