@@ -1,4 +1,4 @@
-Hello! Each includes an actionable button to view the work.
+Hello! Explore my contributions and projects below. Each includes an actionable button to view the work.
 
 ---
 
