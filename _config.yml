@@ -1,4 +1,30 @@
-theme: jekyll-theme-cayman
-title: Thomas Casino Algenio Portfolio
-description: Data Scientist, M.S. Georgia Tech Student
-custom_link: https://github.com/thomasalgenio/Sample_Projects/tree/main
+title: "My Portfolio"
+description: "Showcasing my data science and machine learning projects."
+baseurl: "" # Ensure it's blank for root URLs.
+url: "https://yourusername.github.io" # Replace with your GitHub Pages URL.
+
+# Theme
+theme: minima # You can specify other custom themes here.
+
+# Navigation links
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude unnecessary files from deployment
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub-Flavored Markdown support
+
+# Plugins
+plugins:
+  - jekyll-seo-tag # For better SEO
+  - jekyll-sitemap # Sitemap for search engines
