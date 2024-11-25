@@ -1,25 +1,4 @@
-title: "Thomas Casino Algenio Portfolio"
-description: "Data Scientist, M.S. Georgia Tech Student"
-baseurl: "" # Ensure it's empty for deployment at the root of GitHub Pages.
-url: "https://thomasalgenio.github.io" # Replace <your-github-username> with your GitHub username.
-
 theme: jekyll-theme-cayman
+title: Thomas Casino Algenio Portfolio
+description: Data Scientist, M.S. Georgia Tech Student
 custom_link: https://github.com/thomasalgenio/Sample_Projects/tree/main
-
-# Navigation defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Plugins for additional functionality
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Exclude unnecessary files
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md # Exclude README if GitHub renders it separately
