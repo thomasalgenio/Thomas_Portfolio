@@ -50,10 +50,16 @@
         text-align: center;
       }
 
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
       }
 
@@ -130,101 +136,47 @@
         Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
       </div>
 
-      <!-- Contributions Section -->
-      <section>
-        <h2>Contributions</h2>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Matching Messy Pandas Columns</h3>
-            <p>Resolved missing edge cases in fuzzy matching logic.</p>
-            <p>Collaborated with the author to improve accuracy.</p>
-            <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Data Science Projects Section -->
-      <section>
-        <h2>Data Science Projects</h2>
-
-        <!-- Computer Vision -->
-        <h3>Computer Vision</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Face Detection Project</h3>
-            <p>Performed face detection on AI-generated images.</p>
-            <p>Developed models to classify real and AI-generated faces.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+      <!-- Top Row: Contributions and Data Science Projects -->
+      <section class="grid-2-columns">
+        <!-- Contributions -->
+        <div>
+          <h2>Contributions</h2>
+          <div class="projects">
+            <div class="project-card">
+              <h3>Matching Messy Pandas Columns</h3>
+              <p>Resolved missing edge cases in fuzzy matching logic.</p>
+              <p>Collaborated with the author to improve accuracy.</p>
+              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
+            </div>
           </div>
         </div>
 
-        <!-- NLP Sentiment Analysis -->
-        <h3>NLP Sentiment Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Amazon Collagen Reviews</h3>
-            <p>Sentiment analysis of customer reviews on Amazon.</p>
-            <p>Optimized models for better accuracy.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Amazon Preworkout Reviews</h3>
-            <p>Analyzed preworkout product reviews on Amazon.</p>
-            <p>Derived insights using NLP models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter #BoycottGillette</h3>
-            <p>Explored Twitter sentiment for #BoycottGillette.</p>
-            <p>Visualized trends over time.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-        </div>
+        <!-- Data Science Projects -->
+        <div>
+          <h2>Data Science Projects</h2>
+          <div>
+            <!-- Computer Vision -->
+            <h3>Computer Vision</h3>
+            <div class="projects">
+              <div class="project-card">
+                <h3>Face Detection Project</h3>
+                <p>Performed face detection on AI-generated images.</p>
+                <p>Developed models to classify real and AI-generated faces.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+              </div>
+            </div>
 
-        <!-- Regression Analysis -->
-        <h3>Regression Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Bank Loan Approval</h3>
-            <p>Developed predictive models for bank loan approvals.</p>
-            <p>Used Random Forest and Logistic Regression.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Predicting Diamond Prices</h3>
-            <p>Engineered features to improve diamond price predictions.</p>
-            <p>Applied advanced regression models to refine accuracy.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Diamond_Prices_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Predicting Used Vehicle Prices</h3>
-            <p>Analyzed features to predict used vehicle prices accurately.</p>
-            <p>Optimized performance using XGBoost and Random Forest.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Used_Vehicles_Prediction" class="btn">View Project</a>
-          </div>
-        </div>
-
-        <!-- Classification Analysis -->
-        <h3>Classification Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Hypertension</h3>
-            <p>Engineered public health data to predict hypertension effectively.</p>
-            <p>Applied XGBoost for feature importance and actionable insights.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Hypertension Insights</h3>
-            <p>Generated insights from health data for hypertension risks.</p>
-            <p>Provided recommendations for healthcare professionals.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; {{ site.title }} - Built with Jekyll</p>
-    </footer>
-  </body>
-</html>
+            <!-- NLP Sentiment Analysis -->
+            <h3>NLP Sentiment Analysis</h3>
+            <div class="projects">
+              <div class="project-card">
+                <h3>Amazon Collagen Reviews</h3>
+                <p>Sentiment analysis of customer reviews on Amazon.</p>
+                <p>Optimized models for better accuracy.</p>
+                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+              </div>
+              <div>
+              </div>
+  </Body>
+  </Body>
+  Optimize later
