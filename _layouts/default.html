@@ -60,7 +60,7 @@
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
       }
 
@@ -125,10 +125,7 @@
       }
 
       @media (max-width: 768px) {
-        .grid-2-columns {
-          grid-template-columns: 1fr;
-        }
-        .projects {
+        .grid-2-columns, .projects {
           grid-template-columns: 1fr;
         }
       }
@@ -165,7 +162,7 @@
         <div>
           <h2>Data Science Projects</h2>
 
-          <!-- 2x2 Grid for Subcategories -->
+          <!-- Subcategories in 2x2 Grid -->
           <div class="grid-2-columns">
             <!-- Computer Vision -->
             <div>
@@ -207,14 +204,19 @@
                   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
+                  <h3>Amazon Preworkout Reviews</h3>
+                  <p>Analyzed preworkout product reviews on Amazon.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
                   <h3>Twitter #BoycottGillette</h3>
                   <p>Explored Twitter sentiment for #BoycottGillette.</p>
                   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
-                  <h3>Yelp Restaurant Reviews</h3>
-                  <p>Performed sentiment classification using NLP models.</p>
-                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
+                  <h3>Twitter Gillette Unigram Model</h3>
+                  <p>Built unigram sentiment models for Gillette campaigns.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
                 </div>
               </div>
             </div>
@@ -224,14 +226,19 @@
               <h3 style="text-align: center;">Regression Analysis</h3>
               <div class="projects">
                 <div class="project-card">
-                  <h3>Predicting Bank Loan Approval</h3>
-                  <p>Developed predictive models for bank loan approvals.</p>
-                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
+                  <h3>Predicting Diamond Prices</h3>
+                  <p>Built predictive regression models for diamond pricing.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
                 </div>
                 <div class="project-card">
                   <h3>Predicting Home Prices</h3>
                   <p>Built models to predict real estate prices accurately.</p>
                   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                  <h3>Predicting Used Vehicle Prices</h3>
+                  <p>Analyzed features to predict used vehicle prices.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
                 </div>
               </div>
             </div>
