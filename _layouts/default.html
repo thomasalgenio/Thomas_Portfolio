@@ -14,6 +14,7 @@
         background-color: #f4f4f4;
         color: #333;
         line-height: 1.6;
+        overflow-x: hidden;
       }
 
       header {
@@ -53,8 +54,9 @@
       .grid-2-columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
         justify-items: center;
+        align-items: start;
       }
 
       .projects {
@@ -65,8 +67,7 @@
       }
 
       .project-card {
-        width: 300px;
-        height: 250px;
+        width: 280px;
         background: white;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -83,13 +84,13 @@
       }
 
       .project-card h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 10px;
         color: #157878;
       }
 
       .project-card p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: #555;
         margin: 10px 0;
       }
@@ -125,7 +126,10 @@
       }
 
       @media (max-width: 768px) {
-        .grid-2-columns, .projects {
+        .grid-2-columns {
+          grid-template-columns: 1fr;
+        }
+        .projects {
           grid-template-columns: 1fr;
         }
       }
@@ -208,16 +212,6 @@
                   <p>Analyzed preworkout product reviews on Amazon.</p>
                   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
                 </div>
-                <div class="project-card">
-                  <h3>Twitter #BoycottGillette</h3>
-                  <p>Explored Twitter sentiment for #BoycottGillette.</p>
-                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                  <h3>Twitter Gillette Unigram Model</h3>
-                  <p>Built unigram sentiment models for Gillette campaigns.</p>
-                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-                </div>
               </div>
             </div>
 
@@ -234,11 +228,6 @@
                   <h3>Predicting Home Prices</h3>
                   <p>Built models to predict real estate prices accurately.</p>
                   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                  <h3>Predicting Used Vehicle Prices</h3>
-                  <p>Analyzed features to predict used vehicle prices.</p>
-                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
                 </div>
               </div>
             </div>
