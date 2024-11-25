@@ -59,6 +59,23 @@
         margin: 0 auto;
       }
 
+      .project {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .project h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      .project p {
+        margin-bottom: 15px;
+      }
+
       .btn {
         display: inline-block;
         padding: 10px 20px;
@@ -95,7 +112,37 @@
     </nav>
 
     <main>
-      {{ content }}
+      <section class="projects">
+        <div class="project">
+          <h3>Matching Messy Pandas Columns</h3>
+          <p>Improved data accuracy by resolving edge cases in fuzzy matching.</p>
+          <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Face Detection Project</h3>
+          <p>Detecting real vs AI-generated faces using computer vision techniques.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Amazon Collagen Reviews</h3>
+          <p>Sentiment analysis of customer reviews using NLP techniques.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Predicting Bank Loan Approval</h3>
+          <p>Machine learning models to predict loan approval probabilities.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
+        </div>
+
+        <div class="project">
+          <h3>Predicting Hypertension</h3>
+          <p>Machine learning models for healthcare predictions and insights.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
+        </div>
+      </section>
     </main>
 
     <footer>
