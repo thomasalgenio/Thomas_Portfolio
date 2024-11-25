@@ -1,7 +1,7 @@
 title: "My Portfolio"
 description: "Showcasing my data science and machine learning projects."
 baseurl: "" # Ensure it's blank for root URLs.
-url: "https://yourusername.github.io" # Replace with your GitHub Pages URL.
+url: "https://thomasalgenio.github.io/Thomas_Portfolio/" # Replace with your GitHub Pages URL.
 
 # Theme
 theme: minima # You can specify other custom themes here.
