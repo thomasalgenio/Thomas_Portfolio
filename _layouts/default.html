@@ -50,9 +50,9 @@
         text-align: center;
       }
 
-      .grid-2-columns {
+      .grid-3-columns {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
         align-items: start;
       }
@@ -124,12 +124,8 @@
         margin-bottom: 30px;
       }
 
-      .left-align {
-        text-align: left;
-      }
-
       @media (max-width: 768px) {
-        .grid-2-columns {
+        .grid-3-columns {
           grid-template-columns: 1fr;
         }
         .projects {
@@ -153,7 +149,7 @@
       <!-- Data Science Projects -->
       <section>
         <h2>Data Science Projects</h2>
-        <div class="grid-2-columns">
+        <div class="grid-3-columns">
           <!-- Contributions -->
           <div>
             <h3>Contributions</h3>
@@ -260,7 +256,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </main>
