@@ -1,238 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      /* General Styles */
-      body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-        line-height: 1.6;
-      }
+# Welcome to My Portfolio
 
-      header {
-        background: #157878;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
+Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
 
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
+---
 
-      header h2 {
-        margin: 5px 0 0;
-        font-weight: 400;
-      }
+## Contributions
+- **Matching Messy Pandas Columns**
+  - Resolved missing edge cases in fuzzy matching logic.
+  - Improved the accuracy of fuzzy matching for messy pandas columns.
+  - Collaborated with the author to ensure comprehensive coverage of all potential use cases.
+  - [View Article](https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f)
 
-      main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-      }
+---
 
-      section {
-        margin-bottom: 40px;
-      }
+## Data Science Projects
 
-      section h2 {
-        color: #157878;
-        font-size: 2rem;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+### Computer Vision
+- **Face Detection Project**
+  - Performed face detection on AI-generated images.
+  - Developed classification models to differentiate real faces from AI-generated ones.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images)
 
-      .projects {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-      }
+---
 
-      .project-card {
-        width: 300px;
-        height: 250px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        transition: transform 0.2s;
-      }
+### NLP Sentiment Analysis
+- **Amazon Collagen Reviews**
+  - Scraped unstructured text data from Amazon product reviews.
+  - Performed sentiment analysis using NLP models.
+  - Optimized models for better accuracy.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
 
-      .project-card:hover {
-        transform: translateY(-5px);
-      }
+- **Amazon Preworkout Reviews**
+  - Analyzed preworkout product reviews from Amazon using NLP.
+  - Extracted insights to improve customer experience.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
 
-      .project-card h3 {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-        color: #157878;
-      }
+- **Twitter #BoycottGillette**
+  - Scraped tweets related to the #BoycottGillette campaign.
+  - Performed sentiment analysis and visualized trends over time.
+  - Developed insights into the public's reaction to the campaign.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
 
-      .project-card p {
-        font-size: 0.9rem;
-        color: #555;
-        margin: 10px 0;
-      }
+- **Twitter #GilletteAd**
+  - Analyzed public sentiment for the Gillette Ad campaign.
+  - Built models to classify and interpret tweet sentiments.
+  - Derived actionable insights for marketing teams.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
 
-      .btn {
-        display: inline-block;
-        padding: 8px 12px;
-        background-color: #157878;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-      }
+- **Twitter Gillette Unigram Model**
+  - Created unigram sentiment models for analyzing Twitter campaigns.
+  - Extracted detailed insights into social responses to Gillette ads.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
 
-      .btn:hover {
-        background-color: #104f5b;
-      }
+- **Yelp Restaurant Reviews**
+  - Scraped Yelp reviews for restaurant data.
+  - Applied sentiment analysis using advanced NLP techniques.
+  - Derived insights to help restaurant owners understand customer satisfaction.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp)
 
-      footer {
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 20px;
-      }
+---
 
-      .welcome-message {
-        text-align: center;
-        font-size: 1.2rem;
-        color: #555;
-        margin-bottom: 30px;
-      }
+### Regression Analysis
+- **Predicting Bank Loan Approval**
+  - Developed predictive models to assess bank loan approvals.
+  - Engineered features to improve model accuracy.
+  - Applied Random Forest and Logistic Regression models.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction)
 
-      @media (max-width: 768px) {
-        .projects {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>{{ site.title }}</h1>
-      <h2>{{ site.description }}</h2>
-    </header>
+- **Predicting Diamond Prices**
+  - Built regression models to predict diamond prices.
+  - Engineered features to improve price prediction accuracy.
+  - Applied advanced regression techniques.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction)
 
-    <main>
-      <!-- Welcome Message -->
-      <div class="welcome-message">
-        Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
-      </div>
+- **Predicting Used Vehicle Prices**
+  - Developed predictive models for used vehicle prices.
+  - Applied machine learning techniques including Random Forest and XGBoost.
+  - Engineered features to refine prediction accuracy.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction)
 
-      <!-- Contributions Section -->
-      <section>
-        <h2>Contributions</h2>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Matching Messy Pandas Columns</h3>
-            <p>Resolved missing edge cases in fuzzy matching logic.</p>
-            <p>Collaborated with the author to improve accuracy.</p>
-            <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-          </div>
-        </div>
-      </section>
+- **Predicting Home Prices**
+  - Analyzed real estate data to predict home prices.
+  - Built regression models using Random Forest and XGBoost.
+  - Engineered key features to enhance model performance.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction)
 
-      <!-- Data Science Projects Section -->
-      <section>
-        <h2>Data Science Projects</h2>
+---
 
-        <!-- Computer Vision -->
-        <h3 style="text-align: center;">Computer Vision</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Face Detection Project</h3>
-            <p>Performed face detection on AI-generated images.</p>
-            <p>Developed models to classify real and AI-generated faces.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-          </div>
-        </div>
+### Classification Analysis
+- **Predicting Hypertension**
+  - Engineered public health data to predict hypertension risks.
+  - Applied models like Logistic Regression and XGBoost.
+  - Provided actionable insights for healthcare professionals.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction)
 
-        <!-- NLP Sentiment Analysis -->
-        <h3 style="text-align: center;">NLP Sentiment Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Amazon Collagen Reviews</h3>
-            <p>Sentiment analysis of customer reviews on Amazon.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Amazon Preworkout Reviews</h3>
-            <p>Analyzed preworkout product reviews on Amazon.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter #BoycottGillette</h3>
-            <p>Explored Twitter sentiment for #BoycottGillette.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter #GilletteAd</h3>
-            <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter Gillette Unigram Model</h3>
-            <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Yelp Restaurant Reviews</h3>
-            <p>Performed sentiment classification using NLP models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-          </div>
-        </div>
-
-        <!-- Regression Analysis -->
-        <h3 style="text-align: center;">Regression Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Bank Loan Approval</h3>
-            <p>Developed predictive models for bank loan approvals.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Predicting Diamond Prices</h3>
-            <p>Predicted prices using regression models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
-          </div>
-        </div>
-
-        <!-- Classification Analysis -->
-        <h3 style="text-align: center;">Classification Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Hypertension</h3>
-            <p>Analyzed public health data.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Hypertension Insights</h3>
-            <p>Generated insights from health data.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; {{ site.title }} - Built with Jekyll</p>
-    </footer>
-  </body>
-</html>
+- **Hypertension Insights**
+  - Analyzed public health data for insights on hypertension.
+  - Provided feature importance analysis using XGBoost models.
+  - Suggested actionable recommendations for healthcare professionals.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction)
