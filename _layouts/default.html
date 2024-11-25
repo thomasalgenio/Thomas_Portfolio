@@ -12,6 +12,7 @@
         padding: 0;
         background-color: #f4f4f4;
         color: #333;
+        line-height: 1.6;
       }
 
       header {
@@ -58,32 +59,19 @@
         margin: 0 auto;
       }
 
-      .project {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #157878;
+        border-radius: 5px;
+        font-weight: bold;
         text-align: center;
       }
 
-      .project h3 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
-
-      .project a {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        background: #157878;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-
-      .project a:hover {
-        background: #104f5b;
+      .btn:hover {
+        background-color: #104f5b;
       }
 
       footer {
@@ -107,18 +95,7 @@
     </nav>
 
     <main>
-      <section class="projects">
-        <div class="project">
-          <h3>Face Detection Project</h3>
-          <p>Detecting real vs AI-generated faces using computer vision techniques.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images">View Project</a>
-        </div>
-        <div class="project">
-          <h3>Predicting Hypertension</h3>
-          <p>Machine learning models for healthcare predictions and insights.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction">View Project</a>
-        </div>
-      </section>
+      {{ content }}
     </main>
 
     <footer>
