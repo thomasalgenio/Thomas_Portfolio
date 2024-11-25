@@ -14,6 +14,8 @@ Hello! Explore my contributions and projects below. Each includes an actionable 
 
 ## Data Science Projects
 
+---
+
 ### Computer Vision
 <div class="projects">
   <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">Face Detection Project</a>
@@ -55,3 +57,4 @@ Hello! Explore my contributions and projects below. Each includes an actionable 
 
 - Engineered public health data to predict hypertension.
 - Provided actionable insights for healthcare professionals.
+
