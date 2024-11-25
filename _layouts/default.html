@@ -50,15 +50,21 @@
         text-align: center;
       }
 
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
       }
 
       .project-card {
-        width: 300px;
+        width: 250px;
         height: 250px;
         background: white;
         border-radius: 8px;
@@ -116,12 +122,6 @@
         color: #555;
         margin-bottom: 30px;
       }
-
-      @media (max-width: 768px) {
-        .projects {
-          grid-template-columns: 1fr;
-        }
-      }
     </style>
   </head>
   <body>
@@ -136,96 +136,74 @@
         Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
       </div>
 
-      <!-- Contributions Section -->
-      <section>
-        <h2>Contributions</h2>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Matching Messy Pandas Columns</h3>
-            <p>Resolved missing edge cases in fuzzy matching logic.</p>
-            <p>Collaborated with the author to improve accuracy.</p>
-            <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Data Science Projects Section -->
-      <section>
-        <h2>Data Science Projects</h2>
-
-        <!-- Computer Vision -->
-        <h3 style="text-align: center;">Computer Vision</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Face Detection Project</h3>
-            <p>Performed face detection on AI-generated images.</p>
-            <p>Developed models to classify real and AI-generated faces.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+      <!-- Top Row: Contributions and Data Science Projects -->
+      <section class="grid-2-columns">
+        <!-- Contributions -->
+        <div>
+          <h2>Contributions</h2>
+          <div class="projects">
+            <div class="project-card">
+              <h3>Matching Messy Pandas Columns</h3>
+              <p>Resolved missing edge cases in fuzzy matching logic.</p>
+              <p>Collaborated with the author to improve accuracy.</p>
+              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
+            </div>
           </div>
         </div>
 
-        <!-- NLP Sentiment Analysis -->
-        <h3 style="text-align: center;">NLP Sentiment Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Amazon Collagen Reviews</h3>
-            <p>Sentiment analysis of customer reviews on Amazon.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Amazon Preworkout Reviews</h3>
-            <p>Analyzed preworkout product reviews on Amazon.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter #BoycottGillette</h3>
-            <p>Explored Twitter sentiment for #BoycottGillette.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter #GilletteAd</h3>
-            <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter Gillette Unigram Model</h3>
-            <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Yelp Restaurant Reviews</h3>
-            <p>Performed sentiment classification using NLP models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-          </div>
-        </div>
+        <!-- Data Science Projects -->
+        <div>
+          <h2>Data Science Projects</h2>
+          <div class="grid-2-columns">
+            <!-- Computer Vision -->
+            <div>
+              <h3>Computer Vision</h3>
+              <div class="projects">
+                <div class="project-card">
+                  <h3>Face Detection Project</h3>
+                  <p>Performed face detection on AI-generated images.</p>
+                  <p>Developed models to classify real and AI-generated faces.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
 
-        <!-- Regression Analysis -->
-        <h3 style="text-align: center;">Regression Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Bank Loan Approval</h3>
-            <p>Developed predictive models for bank loan approvals.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Predicting Diamond Prices</h3>
-            <p>Predicted prices using regression models.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
-          </div>
-        </div>
+            <!-- NLP Sentiment Analysis -->
+            <div>
+              <h3>NLP Sentiment Analysis</h3>
+              <div class="projects">
+                <div class="project-card">
+                  <h3>Amazon Collagen Reviews</h3>
+                  <p>Sentiment analysis of customer reviews on Amazon.</p>
+                  <p>Optimized models for better accuracy.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
 
-        <!-- Classification Analysis -->
-        <h3 style="text-align: center;">Classification Analysis</h3>
-        <div class="projects">
-          <div class="project-card">
-            <h3>Predicting Hypertension</h3>
-            <p>Analyzed public health data.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Hypertension Insights</h3>
-            <p>Generated insights from health data.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
+            <!-- Regression Analysis -->
+            <div>
+              <h3>Regression Analysis</h3>
+              <div class="projects">
+                <div class="project-card">
+                  <h3>Predicting Home Prices</h3>
+                  <p>Machine learning for real estate prices.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Classification Analysis -->
+            <div>
+              <h3>Classification Analysis</h3>
+              <div class="projects">
+                <div class="project-card">
+                  <h3>Predicting Hypertension</h3>
+                  <p>Analyzed public health data.</p>
+                  <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
