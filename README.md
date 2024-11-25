@@ -60,28 +60,7 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
 
 ---
 
-### Regression Analysis
-- **Predicting Diamond Prices**
-  - Built regression models to predict diamond prices.
-  - Engineered features to improve price prediction accuracy.
-  - Applied advanced regression techniques.
-  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction)
-
-- **Predicting Used Vehicle Prices**
-  - Developed predictive models for used vehicle prices.
-  - Applied machine learning techniques including Random Forest and XGBoost.
-  - Engineered features to refine prediction accuracy.
-  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction)
-
-- **Predicting Home Prices**
-  - Analyzed real estate data to predict home prices.
-  - Built regression models using Random Forest and XGBoost.
-  - Engineered key features to enhance model performance.
-  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction)
-
----
-
-### Classification Analysis
+### Classification & Regression Analysis
 - **Predicting Hypertension**
   - Engineered public health data to predict hypertension risks.
   - Applied models like Logistic Regression and XGBoost.
@@ -99,3 +78,21 @@ Hello! Welcome to my portfolio. Below you'll find highlights of my contributions
   - Engineered features to improve model accuracy.
   - Applied Random Forest and Logistic Regression models.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction)
+
+- **Predicting Diamond Prices**
+  - Built regression models to predict diamond prices.
+  - Engineered features to improve price prediction accuracy.
+  - Applied advanced regression techniques.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction)
+
+- **Predicting Used Vehicle Prices**
+  - Developed predictive models for used vehicle prices.
+  - Applied machine learning techniques including Random Forest and XGBoost.
+  - Engineered features to refine prediction accuracy.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction)
+
+- **Predicting Home Prices**
+  - Analyzed real estate data to predict home prices.
+  - Built regression models using Random Forest and XGBoost.
+  - Engineered key features to enhance model performance.
+  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction)
