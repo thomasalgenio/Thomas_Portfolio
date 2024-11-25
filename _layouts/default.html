@@ -12,44 +12,21 @@
         padding: 0;
         background-color: #f4f4f4;
         color: #333;
-        line-height: 1.6;
       }
-
       header {
         background: #157878;
-        padding: 20px 0;
+        padding: 20px;
         text-align: center;
         color: white;
       }
-
       header h1 {
         margin: 0;
         font-size: 2.5rem;
       }
-
       header h2 {
         margin: 0;
         font-weight: 400;
       }
-
-      .nav {
-        display: flex;
-        justify-content: center;
-        background-color: #104f5b;
-        padding: 10px;
-      }
-
-      .nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: bold;
-      }
-
-      .nav a:hover {
-        text-decoration: underline;
-      }
-
       .projects {
         display: grid;
         gap: 20px;
@@ -58,24 +35,6 @@
         max-width: 1200px;
         margin: 0 auto;
       }
-
-      .project {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-      }
-
-      .project h3 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
-
-      .project p {
-        margin-bottom: 15px;
-      }
-
       .btn {
         display: inline-block;
         padding: 10px 20px;
@@ -86,16 +45,8 @@
         font-weight: bold;
         text-align: center;
       }
-
       .btn:hover {
         background-color: #104f5b;
-      }
-
-      footer {
-        text-align: center;
-        background: #333;
-        color: white;
-        padding: 10px 0;
       }
     </style>
   </head>
@@ -104,49 +55,14 @@
       <h1>{{ site.title }}</h1>
       <h2>{{ site.description }}</h2>
     </header>
-
-    <nav class="nav">
-      {% for item in site.nav %}
-        <a href="{{ item.url }}">{{ item.title }}</a>
-      {% endfor %}
-    </nav>
-
     <main>
       <section class="projects">
-        <div class="project">
-          <h3>Matching Messy Pandas Columns</h3>
-          <p>Improved data accuracy by resolving edge cases in fuzzy matching.</p>
-          <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Project</a>
-        </div>
-
-        <div class="project">
-          <h3>Face Detection Project</h3>
-          <p>Detecting real vs AI-generated faces using computer vision techniques.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-        </div>
-
-        <div class="project">
-          <h3>Amazon Collagen Reviews</h3>
-          <p>Sentiment analysis of customer reviews using NLP techniques.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-        </div>
-
-        <div class="project">
-          <h3>Predicting Bank Loan Approval</h3>
-          <p>Machine learning models to predict loan approval probabilities.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
-        </div>
-
-        <div class="project">
-          <h3>Predicting Hypertension</h3>
-          <p>Machine learning models for healthcare predictions and insights.</p>
-          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
-        </div>
+        <!-- Markdown Content Will Be Injected Here -->
+        {{ content }}
       </section>
     </main>
-
     <footer>
-      <p>&copy; {{ site.title }} - Built with Jekyll</p>
+      <p style="text-align: center;">&copy; {{ site.title }} - Built with Jekyll</p>
     </footer>
   </body>
 </html>
