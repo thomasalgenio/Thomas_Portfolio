@@ -6,7 +6,6 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-      /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -39,7 +38,6 @@
         padding: 20px;
       }
 
-      /* Projects Grid */
       .projects {
         display: grid;
         gap: 20px;
@@ -102,42 +100,59 @@
     </header>
 
     <main>
-      <section>
-        <!-- Inject All Markdown Content -->
-        <div class="content">
-          {{ content }}
-        </div>
-      </section>
-
       <section class="projects">
-        <!-- Add Project Cards for a Clean Layout -->
+        <!-- Card 1 -->
         <div class="project-card">
           <h3>Matching Messy Pandas Columns</h3>
-          <p>Improved data accuracy by resolving edge cases in fuzzy matching.</p>
+          <p>Identified and resolved a missing edge case in the article, improving accuracy.</p>
+          <p>Collaborated with the author to ensure comprehensive coverage of use cases.</p>
           <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Project</a>
         </div>
 
+        <!-- Card 2 -->
         <div class="project-card">
           <h3>Face Detection Project</h3>
-          <p>Detecting real vs AI-generated faces using computer vision techniques.</p>
+          <p>Performed face detection on AI-generated images.</p>
+          <p>Developed models to differentiate real faces from AI-generated ones.</p>
           <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
         </div>
 
+        <!-- Card 3 -->
         <div class="project-card">
           <h3>Amazon Collagen Reviews</h3>
-          <p>Sentiment analysis of customer reviews using NLP techniques.</p>
+          <p>Scraped unstructured text data from Amazon reviews.</p>
+          <p>Optimized models including Linear Regression and Random Forest.</p>
           <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
         </div>
 
+        <!-- Card 4 -->
+        <div class="project-card">
+          <h3>Amazon Preworkout Reviews</h3>
+          <p>Sentiment analysis for customer reviews on preworkout products.</p>
+          <p>Derived insights using NLP pipelines and modeling techniques.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="project-card">
+          <h3>Twitter Gillette Unigram Model</h3>
+          <p>Analyzed Twitter sentiment regarding the #GilletteAd campaign.</p>
+          <p>Used unigram modeling to classify sentiment effectively.</p>
+          <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
+        </div>
+
+        <!-- Add more cards following the same structure -->
         <div class="project-card">
           <h3>Predicting Bank Loan Approval</h3>
-          <p>Machine learning models to predict loan approval probabilities.</p>
+          <p>Built predictive models using Logistic Regression and Random Forest.</p>
+          <p>Provided actionable insights for financial decision-making.</p>
           <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Bank_Loan_Prediction" class="btn">View Project</a>
         </div>
 
         <div class="project-card">
           <h3>Predicting Hypertension</h3>
-          <p>Machine learning models for healthcare predictions and insights.</p>
+          <p>Engineered public health data to predict hypertension effectively.</p>
+          <p>Applied XGBoost for feature importance and actionable insights.</p>
           <a href="https://github.com/thomasalgenio/Sample_Projects/tree/263caf5c4e4587d46c72187b9081874bf19cf1c5/Hypertension_Prediction" class="btn">View Project</a>
         </div>
       </section>
