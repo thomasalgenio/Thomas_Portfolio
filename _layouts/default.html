@@ -33,6 +33,28 @@
         font-weight: 400;
       }
 
+      .button-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #157878;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #104f5b;
+      }
+
       main {
         max-width: 1200px;
         margin: 20px auto;
@@ -62,7 +84,7 @@
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         justify-content: center;
       }
@@ -95,21 +117,6 @@
         font-size: 0.9rem;
         color: #555;
         margin: 10px 0;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 8px 12px;
-        background-color: #157878;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-      }
-
-      .btn:hover {
-        background-color: #104f5b;
       }
 
       footer {
@@ -147,6 +154,11 @@
       <h2>{{ site.description }}</h2>
     </header>
 
+    <div class="button-container">
+      <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="btn">LinkedIn</a>
+      <a href="contact.html" class="btn">Contact Me</a>
+    </div>
+
     <main>
       <!-- Welcome Message -->
       <div class="welcome-message">
@@ -157,7 +169,6 @@
       <section>
         <h2>Data Science Projects</h2>
         <div class="grid-2-columns">
-          
           <!-- Contributions -->
           <div>
             <h3>Contributions</h3>
