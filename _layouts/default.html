@@ -316,3 +316,16 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function toggleText(button) {
+    const hiddenText = button.previousElementSibling;
+    if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+      hiddenText.style.display = "block";
+      button.textContent = "Show Less";
+    } else {
+      hiddenText.style.display = "none";
+      button.textContent = "Show More";
+    }
+  }
+</script>
