@@ -6,6 +6,39 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+      
+    /* Timeline Styles */
+    .timeline {
+      width: 20%;
+      float: left;
+      padding-right: 20px;
+      border-right: 2px solid #ddd;
+      margin-right: 20px;
+    }
+    
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+    
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #0F4C81;
+    }
+    
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .timeline-item p {
+      font-size: 0.85rem;
+      color: #333;
+      margin: 0;
+    }
+
       /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
@@ -196,6 +229,25 @@
       <!-- Welcome Message -->
       <div class="welcome-message">
         Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
+      </div>
+
+      <!-- Work Experience Timeline -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Software Engineer</h3>
+          <span>Jan 2020 - Present</span>
+          <p>Worked on developing scalable web applications and improving user experience. Contributed to backend systems and API integrations.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Analyst</h3>
+          <span>Jun 2017 - Dec 2019</span>
+          <p>Analyzed complex datasets to uncover actionable insights and built dashboards to visualize KPIs for business decisions.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Intern</h3>
+          <span>Jan 2016 - May 2017</span>
+          <p>Assisted with data cleaning and conducted exploratory analysis for various projects. Learned foundational programming skills.</p>
+        </div>
       </div>
 
       <!-- Data Science Projects & Contributions -->
