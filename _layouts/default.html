@@ -102,6 +102,26 @@
         text-align: center;
         transition: transform 0.2s;
       }
+
+      .hidden-text {
+        display: none; /* Initially hidden */
+      }
+      
+      .toggle-btn {
+        background-color: #0F4C81;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+      }
+      
+      .toggle-btn:hover {
+        background-color: #104f5b;
+      }
       
       .project-card ul {
         list-style-type: disc; /* Use disc bullets */
@@ -111,7 +131,7 @@
       }
       
       .project-card li {
-        font-size: 0.2rem; /* Match the font size with other text */
+        font-size: 0.7rem; /* Match the font size with other text */
         color: #555;
         line-height: 1.5; /* Add spacing between lines */
       }
@@ -189,10 +209,13 @@
               <div class="project-card">
                 <h3>Matching Messy Pandas Columns</h3>
                 <p>Resolved missing edge cases in fuzzy matching logic.</p>
-                <ul>
-                  <li>Improved the accuracy of fuzzy matching for messy pandas columns.</li>
-                  <li>Collaborated with the author to ensure comprehensive coverage of all potential use cases.<.li>
-                </ul>
+                <div class="hidden-text">
+                  <ul>
+                    <li>Improved the accuracy of fuzzy matching for messy pandas columns.</li>
+                    <li>Collaborated with the author to ensure comprehensive coverage of all potential use cases.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn">Show More</button>
                 <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
               </div>
             </div>
