@@ -6,14 +6,16 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-      /* Timeline Styles */
+    /* Timeline Styles */
       .timeline {
         width: 20%; /* Keeps the timeline narrow */
-        margin-left: 0; /* Align with the very left of the container */
-        padding: 0 10px; /* Minimal padding */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Minimal padding to keep content visible */
         border-right: 2px solid #ddd;
-        overflow: visible; /* Ensures visibility */
-        position: relative; /* Keeps the timeline positioned correctly */
+        position: absolute; /* Position it relative to the viewport */
+        left: 0; /* Align to the very left of the screen */
+        top: 0; /* Adjust as needed for vertical positioning */
+        overflow: visible; /* Ensure content is not cut off */
       }
 
       .timeline-item {
@@ -38,7 +40,7 @@
         color: #333;
         margin: 0;
       }
-
+      
       /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
