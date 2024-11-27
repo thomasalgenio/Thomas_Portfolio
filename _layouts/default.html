@@ -6,38 +6,37 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-      
-    /* Timeline Styles */
-    .timeline {
-      width: 20%; /* Keeps the timeline narrow */
-      margin-left: -50px; /* Move the timeline further to the left */
-      padding-right: 20px;
-      border-right: 2px solid #ddd;
-      margin-right: 20px;
-    }
-    
-    .timeline-item {
-      margin-bottom: 20px;
-    }
-    
-    .timeline-item h3 {
-      margin: 0;
-      font-size: 1rem;
-      color: #0F4C81;
-    }
-    
-    .timeline-item span {
-      font-size: 0.9rem;
-      color: #555;
-      display: block;
-      margin-bottom: 5px;
-    }
-    
-    .timeline-item p {
-      font-size: 0.85rem;
-      color: #333;
-      margin: 0;
-    }
+      /* Timeline Styles */
+      .timeline {
+        width: 20%; /* Keeps the timeline narrow */
+        margin-left: -50px; /* Move the timeline further to the left */
+        padding-right: 20px;
+        border-right: 2px solid #ddd;
+        margin-right: 20px;
+      }
+
+      .timeline-item {
+        margin-bottom: 20px;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-size: 1rem;
+        color: #0F4C81;
+      }
+
+      .timeline-item span {
+        font-size: 0.9rem;
+        color: #555;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .timeline-item p {
+        font-size: 0.85rem;
+        color: #333;
+        margin: 0;
+      }
 
       /* General Styles */
       body {
@@ -139,7 +138,7 @@
       .hidden-text {
         display: none; /* Initially hidden */
       }
-      
+
       .toggle-btn {
         background-color: #0F4C81;
         color: white;
@@ -151,24 +150,24 @@
         margin-top: 10px;
         transition: background-color 0.3s;
       }
-      
+
       .toggle-btn:hover {
         background-color: #104f5b;
       }
-      
+
       .project-card ul {
         list-style-type: disc; /* Use disc bullets */
         padding-left: 20px; /* Indent bullets slightly */
         margin: 10px 0; /* Add spacing between the bullets and other elements */
         text-align: left; /* Align bullets to the left */
       }
-      
+
       .project-card li {
         font-size: 0.7rem; /* Match the font size with other text */
         color: #555;
         line-height: 1.5; /* Add spacing between lines */
       }
-      
+
       .project-card:hover {
         transform: translateY(-5px);
       }
@@ -208,6 +207,7 @@
         .grid-2-columns {
           grid-template-columns: 1fr;
         }
+
         .projects {
           grid-template-columns: 1fr;
         }
@@ -322,7 +322,7 @@
             </div>
           </div>
 
-      <!-- NLP Sentiment Analysis -->
+          <!-- NLP Sentiment Analysis -->
           <div>
             <h3>NLP Sentiment Analysis</h3>
             <div class="projects">
@@ -358,7 +358,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </main>
@@ -366,7 +365,7 @@
     <footer>
       <p>&copy; {{ site.title }} - Built with Jekyll</p>
     </footer>
-    
+
     <!-- JavaScript button -->
     <script>
       function toggleText(button) {
@@ -380,6 +379,5 @@
         }
       }
     </script>
-    
   </body>
 </html>
