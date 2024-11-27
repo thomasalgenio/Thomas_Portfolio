@@ -6,40 +6,42 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+      
     /* Timeline Styles */
-      .timeline {
-        width: 20%; /* Keeps the timeline narrow */
-        margin: 0; /* Remove margins */
-        padding: 0 10px; /* Minimal padding to keep content visible */
-        border-right: 2px solid #ddd;
-        position: absolute; /* Position it relative to the viewport */
-        left: 0; /* Align to the very left of the screen */
-        top: 0; /* Adjust as needed for vertical positioning */
-        overflow: visible; /* Ensure content is not cut off */
-      }
-
-      .timeline-item {
-        margin-bottom: 20px;
-      }
-
-      .timeline-item h3 {
-        margin: 0;
-        font-size: 1rem;
-        color: #0F4C81;
-      }
-
-      .timeline-item span {
-        font-size: 0.9rem;
-        color: #555;
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .timeline-item p {
-        font-size: 0.85rem;
-        color: #333;
-        margin: 0;
-      }
+    .timeline {
+      width: 20%; /* Keeps the timeline narrow */
+      margin: 0; /* Remove margins */
+      padding: 0 10px; /* Minimal padding to keep content visible */
+      border-right: 2px solid #ddd;
+      position: absolute; /* Position it relative to the viewport */
+      left: 0; /* Align to the very left of the screen */
+      top: 50%; /* Start at the middle of the screen */
+      transform: translateY(-50%); /* Center vertically */
+      overflow: visible; /* Ensure content is not cut off */
+    }
+    
+    .timeline-item {
+      margin-bottom: 20px;
+    }
+    
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #0F4C81;
+    }
+    
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .timeline-item p {
+      font-size: 0.85rem;
+      color: #333;
+      margin: 0;
+    }
       
       /* General Styles */
       body {
