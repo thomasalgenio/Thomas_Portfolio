@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Casino Algenio Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <style>
       /* General Styles */
       body {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #f0f8ff;
         color: #333;
         line-height: 1.6;
+        overflow-x: hidden;
       }
 
       header {
-        background: #0F4C81;
+        background: linear-gradient(135deg, #85d4ff 0%, #60aaff 99%, #3583f7 100%);
         color: white;
         padding: 20px;
         text-align: center;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
       }
 
       header h1 {
@@ -31,6 +33,7 @@
       header h2 {
         margin: 5px 0 0;
         font-weight: 400;
+        font-size: 1.3rem;
       }
 
       .button-container {
@@ -45,14 +48,17 @@
         font-size: 1rem;
         font-weight: bold;
         color: white;
-        background-color: #0F4C81;
+        background-color: #60aaff;
         text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        border-radius: 50px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
       }
 
       .btn:hover {
-        background-color: #104f5b;
+        transform: scale(1.1);
+        background-color: #85d4ff;
+        color: #333;
       }
 
       main {
@@ -61,15 +67,36 @@
         padding: 20px;
       }
 
-      section {
-        margin-bottom: 40px;
+      .bubble-container {
+        margin: 20px auto;
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 50px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+        cursor: pointer;
       }
 
-      section h2 {
-        color: #0F4C81;
-        font-size: 2rem;
-        margin-bottom: 20px;
-        text-align: center;
+      .bubble-container:hover {
+        transform: scale(1.05);
+      }
+
+      .bubble-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #3583f7;
+      }
+
+      .bubble-content {
+        display: none;
+        margin-top: 15px;
+        padding: 20px;
+        border-top: 2px solid #3583f7;
+        font-size: 1rem;
+        line-height: 1.6;
+        background: #f0faff;
+        border-radius: 15px;
       }
 
       .projects {
@@ -80,20 +107,20 @@
       }
 
       .project-card {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 15px;
+        background: #f0faff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s;
         text-align: center;
-        transition: transform 0.2s;
       }
 
       .hidden-text {
-        display: none; /* Initially hidden */
+        display: none;
       }
 
       .read-more-link {
-        color: #0F4C81;
+        color: #3583f7;
         text-decoration: underline;
         cursor: pointer;
         font-size: 0.9rem;
@@ -116,10 +143,11 @@
 
       .project-card:hover {
         transform: translateY(-5px);
+        box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
       }
 
       footer {
-        background: #333;
+        background: #3583f7;
         color: white;
         text-align: center;
         padding: 10px;
@@ -145,45 +173,69 @@
     </div>
 
     <main>
-      <!-- Data Science Projects & Contributions -->
-      <section>
-        <h2>Data Science Projects & Contributions</h2>
-        <div class="projects">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <h3>Matching Messy Pandas Columns</h3>
-            <p>Resolved missing edge cases in fuzzy matching logic.</p>
-            <ul class="hidden-text">
-              <li>Improved accuracy for 200+ cases.</li>
-              <li>Collaborated with authors for improved coverage.</li>
-            </ul>
-            <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-            <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-          </div>
-          <!-- Project 2 -->
-          <div class="project-card">
-            <h3>Face Detection Project</h3>
-            <p>Performed face detection on AI-generated images.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-          </div>
-          <!-- Add the remaining project cards -->
-          <div class="project-card">
-            <h3>Predicting Hypertension</h3>
-            <p>Analyzed public health data to predict hypertension.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Predicting Used Vehicle Prices</h3>
-            <p>Developed predictive models for used vehicle prices.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Twitter Sentiment Analysis</h3>
-            <p>Analyzed tweets about the Gillette campaign.</p>
-            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
+      <!-- Work Experience Bubble -->
+      <div class="bubble-container" onclick="toggleBubble('experience')">
+        <div class="bubble-header">Work Experience</div>
+        <div id="experience" class="bubble-content">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Quest Diagnostics</h3>
+              <span>Data Scientist Jan 2020 - Nov 2022</span>
+              <p class="timeline-promotion">Promoted from Data Scientist Intern</p>
+              <span>Intern: Jun 2019 - Aug 2019</span>
+            </div>
+            <div class="timeline-item">
+              <h3>United Parcel Service (UPS)</h3>
+              <span>Data Scientist Nov 2022 - Sept 2024</span>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Data Science Projects Bubble -->
+      <div class="bubble-container" onclick="toggleBubble('projects')">
+        <div class="bubble-header">Data Science Projects & Contributions</div>
+        <div id="projects" class="bubble-content">
+          <div class="projects">
+            <!-- Project Cards -->
+            <div class="project-card">
+              <h3>Matching Messy Pandas Columns</h3>
+              <p>Resolved missing edge cases in fuzzy matching logic.</p>
+              <ul class="hidden-text">
+                <li>Enhanced fuzzy logic for 200+ edge cases.</li>
+                <li>Collaborated to improve coverage and performance.</li>
+              </ul>
+              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+            </div>
+            <div class="project-card">
+              <h3>Face Detection Project</h3>
+              <p>Performed face detection on AI-generated images.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Predicting Hypertension</h3>
+              <p>Analyzed public health data to predict hypertension.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Predicting Used Vehicle Prices</h3>
+              <p>Developed predictive models for used vehicle prices.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Twitter Gillette Unigram Model</h3>
+              <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Amazon Collagen Reviews</h3>
+              <p>Sentiment analysis of customer reviews on Amazon.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
+            </div>
+            <!-- Add other projects similarly -->
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -191,6 +243,11 @@
     </footer>
 
     <script>
+      function toggleBubble(id) {
+        const bubble = document.getElementById(id);
+        bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+      }
+
       function toggleText(element, event) {
         const hiddenText = element.previousElementSibling;
         if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
@@ -200,7 +257,7 @@
           hiddenText.style.display = "none";
           element.textContent = "Read More";
         }
-        event.stopPropagation(); // Prevent unwanted behavior
+        event.stopPropagation(); // Prevent bubble toggle
       }
     </script>
   </body>
