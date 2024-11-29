@@ -6,43 +6,6 @@
     <title>{{ site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        
-      /* Timeline Styles */
-      .timeline {
-        width: 10%; /* Keeps the timeline narrow */
-        margin: 0; /* Remove margins */
-        padding: 0 10px; /* Minimal padding to keep content visible */
-        border-right: 2px solid #ddd;
-        position: absolute; /* Position it relative to the viewport */
-        left: 0; /* Align to the very left of the screen */
-        top: 50%; /* Start at the middle of the screen */
-        transform: translateY(-15%); /* Center vertically */
-        overflow: visible; /* Ensure content is not cut off */
-      }
-      
-      .timeline-item {
-        margin-bottom: 20px;
-      }
-      
-      .timeline-item h3 {
-        margin: 0;
-        font-size: 1rem;
-        color: #0F4C81;
-      }
-      
-      .timeline-item span {
-        font-size: 0.9rem;
-        color: #555;
-        display: block;
-        margin-bottom: 5px;
-      }
-      
-      .timeline-item p {
-        font-size: 0.85rem;
-        color: #333;
-        margin: 0;
-      }
-      
       /* General Styles */
       body {
         font-family: 'Poppins', sans-serif;
@@ -96,7 +59,6 @@
         max-width: 1200px;
         margin: 20px auto;
         padding: 20px;
-        overflow: hidden;
       }
 
       section {
@@ -110,12 +72,57 @@
         text-align: center;
       }
 
-      .grid-2-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: start;
-        margin-left: 0; /* Add this line */
+      .dropdown-header {
+        cursor: pointer;
+        background-color: #0F4C81;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .dropdown-header:hover {
+        background-color: #104f5b;
+      }
+
+      .dropdown-content {
+        display: none;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .timeline {
+        margin: 0;
+        padding: 0 10px;
+        border-right: 2px solid #ddd;
+      }
+
+      .timeline-item {
+        margin-bottom: 20px;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-size: 1rem;
+        color: #0F4C81;
+      }
+
+      .timeline-item span {
+        font-size: 0.9rem;
+        color: #555;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .timeline-item p {
+        font-size: 0.85rem;
+        color: #333;
+        margin: 0;
       }
 
       .projects {
@@ -123,7 +130,6 @@
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        justify-content: center;
       }
 
       .project-card {
@@ -140,39 +146,6 @@
         transition: transform 0.2s;
       }
 
-      .hidden-text {
-        display: none; /* Initially hidden */
-      }
-
-      .toggle-btn {
-        background-color: #0F4C81;
-        color: white;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        margin-top: 10px;
-        transition: background-color 0.3s;
-      }
-
-      .toggle-btn:hover {
-        background-color: #104f5b;
-      }
-
-      .project-card ul {
-        list-style-type: disc; /* Use disc bullets */
-        padding-left: 20px; /* Indent bullets slightly */
-        margin: 10px 0; /* Add spacing between the bullets and other elements */
-        text-align: left; /* Align bullets to the left */
-      }
-
-      .project-card li {
-        font-size: 0.7rem; /* Match the font size with other text */
-        color: #555;
-        line-height: 1.5; /* Add spacing between lines */
-      }
-
       .project-card:hover {
         transform: translateY(-5px);
       }
@@ -183,12 +156,6 @@
         color: #0F4C81;
       }
 
-      .project-card p {
-        font-size: 0.9rem;
-        color: #555;
-        margin: 10px 0;
-      }
-
       footer {
         background: #333;
         color: white;
@@ -197,22 +164,7 @@
         margin-top: 20px;
       }
 
-      .welcome-message {
-        text-align: center;
-        font-size: 1.2rem;
-        color: #555;
-        margin-bottom: 30px;
-      }
-
-      .left-align {
-        text-align: left;
-      }
-
       @media (max-width: 768px) {
-        .grid-2-columns {
-          grid-template-columns: 1fr;
-        }
-
         .projects {
           grid-template-columns: 1fr;
         }
@@ -231,139 +183,46 @@
     </div>
 
     <main>
-      <!-- Welcome Message -->
-      <div class="welcome-message">
-        Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
-      </div>
-
-      <!-- Work Experience Timeline -->
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>United Parcel Service (UPS)</h3>
-          <h3>Data Scientist</h3>
-          <span>Nov 2022 - Sept 2024</span>
-          <p>|</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Quest Diagnostics</h3>
-          <h3>Data Scientist</h3>
-          <span>Jan 2020 - Nov 2022</span>
-          <p>|</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Data Scientist Intern</h3>
-          <span>Jun 2019 - Aug 2019</span>
-          <p>|</p>
-        </div>
-      </div>
-
-      <!-- Data Science Projects & Contributions -->
+      <!-- Work Experience Dropdown -->
       <section>
-        <h2>Data Science Projects & Contributions</h2>
-        <div class="grid-2-columns">
-          <!-- Contributions -->
-          <div>
-            <h3>Contributions</h3>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Matching Messy Pandas Columns</h3>
-                <p>Resolved missing edge cases in fuzzy matching logic.</p>
-                <div class="hidden-text">
-                  <ul>
-                    <li>Improved the accuracy of fuzzy matching for messy pandas columns.</li>
-                    <li>Collaborated with the author to ensure comprehensive coverage of all potential use cases.</li>
-                  </ul>
-                </div>
-                <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
-                <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-              </div>
+        <div class="dropdown-header" onclick="toggleDropdown('experience')">Work Experience</div>
+        <div id="experience" class="dropdown-content">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>United Parcel Service (UPS)</h3>
+              <h3>Data Scientist</h3>
+              <span>Nov 2022 - Sept 2024</span>
+            </div>
+            <div class="timeline-item">
+              <h3>Quest Diagnostics</h3>
+              <h3>Data Scientist</h3>
+              <span>Jan 2020 - Nov 2022</span>
+            </div>
+            <div class="timeline-item">
+              <h3>Data Scientist Intern</h3>
+              <span>Jun 2019 - Aug 2019</span>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Computer Vision -->
-          <div>
-            <h3>Computer Vision</h3>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Face Detection Project</h3>
-                <p>Performed face detection on AI-generated images.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-              </div>
+      <!-- Data Science Projects & Contributions Dropdown -->
+      <section>
+        <div class="dropdown-header" onclick="toggleDropdown('projects')">Data Science Projects & Contributions</div>
+        <div id="projects" class="dropdown-content">
+          <h2>Data Science Projects & Contributions</h2>
+          <div class="projects">
+            <div class="project-card">
+              <h3>Matching Messy Pandas Columns</h3>
+              <p>Resolved missing edge cases in fuzzy matching logic.</p>
+              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
             </div>
-          </div>
-
-          <!-- Classification & Regression Analysis -->
-          <div>
-            <h3>Classification & Regression Analysis</h3>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Predicting Hypertension</h3>
-                <p>Analyzed public health data to predict hypertension.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Predicting Used Vehicle Prices</h3>
-                <p>Developed predictive models for used vehicle prices.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Predicting Bank Loan Approval</h3>
-                <p>Developed predictive models to assess bank loan approvals.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Hypertension Insights</h3>
-                <p>Generated insights from health data.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Predicting Diamond Prices</h3>
-                <p>Predicted prices using regression models.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Predicting Home Prices</h3>
-                <p>Built models to predict real estate prices accurately.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
-              </div>
+            <div class="project-card">
+              <h3>Face Detection Project</h3>
+              <p>Performed face detection on AI-generated images.</p>
+              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
             </div>
-          </div>
-
-          <!-- NLP Sentiment Analysis -->
-          <div>
-            <h3>NLP Sentiment Analysis</h3>
-            <div class="projects">
-              <div class="project-card">
-                <h3>Twitter Gillette Unigram Model</h3>
-                <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Amazon Collagen Reviews</h3>
-                <p>Sentiment analysis of customer reviews on Amazon.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Twitter #GilletteAd</h3>
-                <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Amazon Preworkout Reviews</h3>
-                <p>Analyzed preworkout product reviews on Amazon.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Twitter #BoycottGillette</h3>
-                <p>Explored Twitter sentiment for #BoycottGillette.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-              </div>
-              <div class="project-card">
-                <h3>Yelp Restaurant Reviews</h3>
-                <p>Performed sentiment classification using NLP models.</p>
-                <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-              </div>
-            </div>
+            <!-- Add additional project cards here -->
           </div>
         </div>
       </section>
@@ -373,16 +232,13 @@
       <p>&copy; {{ site.title }} - Built with Jekyll</p>
     </footer>
 
-    <!-- JavaScript button -->
     <script>
-      function toggleText(button) {
-        const hiddenText = button.previousElementSibling;
-        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-          hiddenText.style.display = "block";
-          button.textContent = "Show Less";
+      function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "block";
         } else {
-          hiddenText.style.display = "none";
-          button.textContent = "Read More";
+          content.style.display = "none";
         }
       }
     </script>
