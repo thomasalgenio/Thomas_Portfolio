@@ -1,233 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Casino Algenio Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      /* General Styles */
-      body {
-        font-family: 'Rubik', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fffbf0;
-        color: #333;
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+theme: jekyll-theme-cayman
+title: Thomas Casino Algenio Portfolio
+description: Data Scientist, M.S. Georgia Tech Student
+baseurl: "" # Leave blank for root deployment
+url: "https://thomasalgenio.github.io" # Replace <your-github-username> with your username
 
-      header {
-        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #feb692 100%);
-        color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-      }
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
+# Navigation links
+nav:
+  - title: Home
+    url: "/"
+  - title: About
+    url: "/about.html"
+  - title: Projects
+    url: "/projects.html"
+  - title: Contact
+    url: "/contact.html"
 
-      header h2 {
-        margin: 5px 0 0;
-        font-weight: 400;
-        font-size: 1.3rem;
-      }
-
-      .button-container {
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 10px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-        background-color: #ff9a9e;
-        text-decoration: none;
-        border-radius: 50px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
-      }
-
-      .btn:hover {
-        transform: scale(1.1);
-        background-color: #fecfef;
-        color: #333;
-      }
-
-      main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-      }
-
-      .bubble-container {
-        margin: 20px auto;
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 50px;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        transition: transform 0.3s;
-        cursor: pointer;
-      }
-
-      .bubble-container:hover {
-        transform: scale(1.05);
-      }
-
-      .bubble-header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #ff9a9e;
-      }
-
-      .bubble-content {
-        display: none;
-        margin-top: 15px;
-        padding: 20px;
-        border-top: 2px solid #ff9a9e;
-        font-size: 1rem;
-        line-height: 1.6;
-        background: #fef9f9;
-        border-radius: 15px;
-      }
-
-      .timeline {
-        text-align: left;
-        margin: 10px 0;
-      }
-
-      .timeline-item {
-        margin-bottom: 20px;
-      }
-
-      .timeline-item h3 {
-        margin: 0;
-        font-size: 1.2rem;
-        color: #ff758f;
-      }
-
-      .timeline-item span {
-        font-size: 0.9rem;
-        color: #777;
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .projects {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        justify-items: center;
-      }
-
-      .project-card {
-        background: #fff9f9;
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        transition: transform 0.3s;
-        text-align: center;
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      }
-
-      .project-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        color: #ff9a9e;
-      }
-
-      footer {
-        background: #ff758f;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 20px;
-      }
-
-      @media (max-width: 768px) {
-        .projects {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Thomas Casino Algenio Portfolio</h1>
-      <h2>Data Scientist, M.S. Georgia Tech Student</h2>
-    </header>
-
-    <div class="button-container">
-      <a href="https://www.linkedin.com/in/thomasalgenio/" target="_blank" class="btn">LinkedIn</a>
-      <a href="contact.html" class="btn">Contact Me</a>
-    </div>
-
-    <main>
-      <!-- Work Experience Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('experience')">
-        <div class="bubble-header">Work Experience</div>
-        <div id="experience" class="bubble-content">
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>United Parcel Service (UPS)</h3>
-              <span>Nov 2022 - Sept 2024</span>
-              <p>Data Scientist</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Quest Diagnostics</h3>
-              <span>Jan 2020 - Nov 2022</span>
-              <p>Data Scientist</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Data Scientist Intern</h3>
-              <span>Jun 2019 - Aug 2019</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Science Projects Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('projects')">
-        <div class="bubble-header">Data Science Projects & Contributions</div>
-        <div id="projects" class="bubble-content">
-          <div class="projects">
-            <div class="project-card">
-              <h3>Matching Messy Pandas Columns</h3>
-              <p>Resolved missing edge cases in fuzzy matching logic.</p>
-              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-            </div>
-            <div class="project-card">
-              <h3>Face Detection Project</h3>
-              <p>Performed face detection on AI-generated images.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-            </div>
-            <!-- Add more project cards as needed -->
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Thomas Casino Algenio Portfolio</p>
-    </footer>
-
-    <script>
-      function toggleBubble(id) {
-        const bubble = document.getElementById(id);
-        bubble.style.display = bubble.style.display === "block" ? "none" : "block";
-      }
-    </script>
-  </body>
-</html>
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
