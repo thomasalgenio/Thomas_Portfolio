@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Casino Algenio Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
       /* General Styles */
       body {
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f0f8ff;
@@ -67,58 +67,11 @@
         padding: 20px;
       }
 
-      .bubble-container {
-        margin: 20px auto;
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 50px;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      .welcome-message {
         text-align: center;
-        transition: transform 0.3s;
-        cursor: pointer;
-      }
-
-      .bubble-container:hover {
-        transform: scale(1.05);
-      }
-
-      .bubble-header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #3583f7;
-      }
-
-      .bubble-content {
-        display: none;
-        margin-top: 15px;
-        padding: 20px;
-        border-top: 2px solid #3583f7;
-        font-size: 1rem;
-        line-height: 1.6;
-        background: #f0faff;
-        border-radius: 15px;
-      }
-
-      .timeline {
-        text-align: left;
-        margin: 10px 0;
-      }
-
-      .timeline-item {
-        margin-bottom: 20px;
-      }
-
-      .timeline-item h3 {
-        margin: 0;
         font-size: 1.2rem;
-        color: #60aaff;
-      }
-
-      .timeline-item span {
-        font-size: 0.9rem;
-        color: #777;
-        display: block;
-        margin-bottom: 5px;
+        color: #555;
+        margin-bottom: 30px;
       }
 
       .projects {
@@ -148,18 +101,62 @@
         color: #3583f7;
       }
 
+      .project-card p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .project-card ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      .project-card li {
+        font-size: 0.85rem;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      .toggle-btn {
+        background: none;
+        color: #3583f7;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        font-size: 0.9rem;
+        text-decoration: underline;
+      }
+
+      .timeline {
+        margin: 0;
+        padding: 0 10px;
+      }
+
+      .timeline-item {
+        margin-bottom: 20px;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #60aaff;
+      }
+
+      .timeline-item span {
+        font-size: 0.9rem;
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+      }
+
       footer {
         background: #3583f7;
         color: white;
         text-align: center;
         padding: 10px;
         margin-top: 20px;
-      }
-
-      @media (max-width: 768px) {
-        .projects {
-          grid-template-columns: 1fr;
-        }
       }
     </style>
   </head>
@@ -175,48 +172,53 @@
     </div>
 
     <main>
-      <!-- Work Experience Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('experience')">
-        <div class="bubble-header">Work Experience</div>
-        <div id="experience" class="bubble-content">
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>United Parcel Service (UPS)</h3>
-              <span>Nov 2022 - Sept 2024</span>
-              <p>Data Scientist</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Quest Diagnostics</h3>
-              <span>Jan 2020 - Nov 2022</span>
-              <p>Data Scientist</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Data Scientist Intern</h3>
-              <span>Jun 2019 - Aug 2019</span>
-            </div>
-          </div>
-        </div>
+      <!-- Welcome Message -->
+      <div class="welcome-message">
+        Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
       </div>
 
-      <!-- Data Science Projects Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('projects')">
-        <div class="bubble-header">Data Science Projects & Contributions</div>
-        <div id="projects" class="bubble-content">
-          <div class="projects">
-            <div class="project-card">
-              <h3>Matching Messy Pandas Columns</h3>
-              <p>Resolved missing edge cases in fuzzy matching logic.</p>
-              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-            </div>
-            <div class="project-card">
-              <h3>Face Detection Project</h3>
-              <p>Performed face detection on AI-generated images.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-            </div>
-            <!-- Add more project cards as needed -->
+      <!-- Work Experience -->
+      <section>
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>United Parcel Service (UPS)</h3>
+            <span>Nov 2022 - Sept 2024</span>
+            <p>Data Scientist</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Quest Diagnostics</h3>
+            <span>Jan 2020 - Nov 2022</span>
+            <p>Data Scientist</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Data Scientist Intern</h3>
+            <span>Jun 2019 - Aug 2019</span>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Data Science Projects & Contributions -->
+      <section>
+        <h2>Data Science Projects & Contributions</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Matching Messy Pandas Columns</h3>
+            <p>Resolved missing edge cases in fuzzy matching logic.</p>
+            <ul class="hidden-text">
+              <li>Improved the accuracy of fuzzy matching for messy pandas columns.</li>
+              <li>Collaborated with the author to ensure comprehensive coverage of all potential use cases.</li>
+            </ul>
+            <button class="toggle-btn" onclick="toggleText(this)">Read More</button>
+          </div>
+          <div class="project-card">
+            <h3>Face Detection Project</h3>
+            <p>Performed face detection on AI-generated images.</p>
+            <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
+          </div>
+          <!-- Add additional project cards here -->
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -224,9 +226,15 @@
     </footer>
 
     <script>
-      function toggleBubble(id) {
-        const bubble = document.getElementById(id);
-        bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+      function toggleText(button) {
+        const hiddenText = button.previousElementSibling;
+        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+          hiddenText.style.display = "block";
+          button.textContent = "Show Less";
+        } else {
+          hiddenText.style.display = "none";
+          button.textContent = "Read More";
+        }
       }
     </script>
   </body>
