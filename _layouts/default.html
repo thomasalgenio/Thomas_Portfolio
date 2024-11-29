@@ -141,20 +141,13 @@
         display: none; /* Initially hidden */
       }
 
-      .toggle-btn {
-        background-color: #0F4C81;
-        color: white;
-        border: none;
-        padding: 8px 12px;
-        border-radius: 5px;
+      .read-more-link {
+        color: #3583f7;
+        text-decoration: underline;
         cursor: pointer;
         font-size: 0.9rem;
+        display: inline-block;
         margin-top: 10px;
-        transition: background-color 0.3s;
-      }
-
-      .toggle-btn:hover {
-        background-color: #104f5b;
       }
 
       .project-card ul {
@@ -173,12 +166,6 @@
       .project-card:hover {
         transform: translateY(-5px);
         box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
-      }
-
-      .project-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        color: #3583f7;
       }
 
       footer {
@@ -217,16 +204,28 @@
               <h3>United Parcel Service (UPS)</h3>
               <span>Data Scientist Nov 2022 - Sept 2024</span>
               <ul class="hidden-text">
-                <li>Collaborated with International Marketing team to manage an in-house Topic Model solution using BERTopic.</li>
-                <li>Worked with Competitive & Market Intelligence team to develop a Generative AI application.</li>
-                <li>Analyzed 10 KPIs for optimization and provided strategic insights.</li>
+                <li>Managed in-house Topic Model solution using BERTopic.</li>
+                <li>Developed a Generative AI application synthesizing 1TB of financial data.</li>
               </ul>
-              <button class="toggle-btn" onclick="toggleText(this, event)">Read More</button>
+              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
             </div>
-            <div class="timeline-item">
-              <h3>Quest Diagnostics</h3>
-              <span>Jan 2020 - Nov 2022</span>
-              <p>Data Scientist</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science Projects Bubble -->
+      <div class="bubble-container" onclick="toggleBubble('projects')">
+        <div class="bubble-header">Data Science Projects & Contributions</div>
+        <div id="projects" class="bubble-content">
+          <div class="projects">
+            <div class="project-card">
+              <h3>Matching Messy Pandas Columns</h3>
+              <p>Resolved edge cases in fuzzy matching logic.</p>
+              <ul class="hidden-text">
+                <li>Enhanced fuzzy logic for 200+ edge cases.</li>
+                <li>Collaborated to improve coverage and performance.</li>
+              </ul>
+              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
             </div>
           </div>
         </div>
@@ -242,17 +241,17 @@
         const bubble = document.getElementById(id);
         bubble.style.display = bubble.style.display === "block" ? "none" : "block";
       }
-      
-      function toggleText(button, event) {
-        const hiddenText = button.previousElementSibling;
+
+      function toggleText(element, event) {
+        const hiddenText = element.previousElementSibling;
         if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
           hiddenText.style.display = "block";
-          button.textContent = "Show Less";
+          element.textContent = "Show Less";
         } else {
           hiddenText.style.display = "none";
-          button.textContent = "Read More";
+          element.textContent = "Read More";
         }
-        event.stopPropagation(); // Prevents toggling the parent bubble
+        event.stopPropagation(); // Prevent bubble toggle
       }
     </script>
   </body>
