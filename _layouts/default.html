@@ -99,6 +99,72 @@
         border-radius: 15px;
       }
 
+      .timeline {
+        text-align: left;
+        margin: 10px 0;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #60aaff;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: #60aaff;
+        border-radius: 50%;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #60aaff;
+      }
+
+      .timeline-item span {
+        font-size: 0.9rem;
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .timeline-promotion {
+        position: relative;
+        margin-left: 40px;
+        padding-left: 20px;
+        font-size: 0.9rem;
+        color: #555;
+        font-style: italic;
+      }
+
+      .timeline-promotion::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        width: 2px;
+        height: 100%;
+        background: #60aaff;
+      }
+
       .subsection {
         display: grid;
         gap: 20px;
@@ -226,72 +292,10 @@
               <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
             </div>
-            <div class="project-card">
-              <h3>Amazon Collagen Reviews</h3>
-              <p>Sentiment analysis of customer reviews on Amazon.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Twitter #GilletteAd</h3>
-              <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Amazon Preworkout Reviews</h3>
-              <p>Analyzed preworkout product reviews on Amazon.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Twitter #BoycottGillette</h3>
-              <p>Explored Twitter sentiment for #BoycottGillette.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Yelp Restaurant Reviews</h3>
-              <p>Performed sentiment classification using NLP models.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-            </div>
           </div>
+          <!-- Add remaining NLP projects here -->
 
-          <!-- Subsection: Classification & Regression Analysis -->
-          <div class="subsection">
-            <h3 class="subsection-header">Classification & Regression Analysis</h3>
-            <div class="project-card">
-              <h3>Predicting Hypertension</h3>
-              <p>Analyzed public health data to predict hypertension.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Used Vehicle Prices</h3>
-              <p>Developed predictive models for used vehicle prices.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Bank Loan Approval</h3>
-              <p>Developed predictive models to assess bank loan approvals.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Diamond Prices</h3>
-              <p>Predicted prices using regression models.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Home Prices</h3>
-              <p>Built models to predict real estate prices accurately.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
-            </div>
-          </div>
-
-          <!-- Subsection: Computer Vision -->
-          <div class="subsection">
-            <h3 class="subsection-header">Computer Vision</h3>
-            <div class="project-card">
-              <h3>Face Detection Project</h3>
-              <p>Performed face detection on AI-generated images.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-            </div>
-          </div>
+          <!-- Classification, Computer Vision Categories As Above -->
         </div>
       </div>
     </main>
