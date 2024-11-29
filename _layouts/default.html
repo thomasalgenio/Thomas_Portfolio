@@ -137,6 +137,39 @@
         text-align: center;
       }
 
+      .hidden-text {
+        display: none; /* Initially hidden */
+      }
+
+      .toggle-btn {
+        background-color: #0F4C81;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .toggle-btn:hover {
+        background-color: #104f5b;
+      }
+
+      .project-card ul {
+        list-style-type: disc; /* Use disc bullets */
+        padding-left: 20px; /* Indent bullets slightly */
+        margin: 10px 0; /* Add spacing between the bullets and other elements */
+        text-align: left; /* Align bullets to the left */
+      }
+
+      .project-card li {
+        font-size: 0.7rem; /* Match the font size with other text */
+        color: #555;
+        line-height: 1.5; /* Add spacing between lines */
+      }
+      
       .project-card:hover {
         transform: translateY(-5px);
         box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
@@ -234,6 +267,17 @@
       function toggleBubble(id) {
         const bubble = document.getElementById(id);
         bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+      }
+      
+      function toggleText(button) {
+        const hiddenText = button.previousElementSibling;
+        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+          hiddenText.style.display = "block"; // Show the content
+          button.textContent = "Show Less"; // Change button text
+        } else {
+          hiddenText.style.display = "none"; // Hide the content
+          button.textContent = "Read More"; // Change button text
+        }
       }
     </script>
   </body>
