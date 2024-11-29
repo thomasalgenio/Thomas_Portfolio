@@ -99,6 +99,60 @@
         border-radius: 15px;
       }
 
+      .timeline {
+        text-align: left;
+        margin: 10px 0;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #60aaff;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: #60aaff;
+        border-radius: 50%;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #60aaff;
+      }
+
+      .timeline-item span {
+        font-size: 0.9rem;
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .timeline-promotion {
+        margin-left: 40px;
+        font-size: 0.9rem;
+        color: #555;
+        font-style: italic;
+      }
+
       .projects {
         display: grid;
         gap: 20px;
@@ -223,16 +277,10 @@
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
             </div>
             <div class="project-card">
-              <h3>Twitter Gillette Unigram Model</h3>
-              <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
+              <h3>Twitter Sentiment Analysis</h3>
+              <p>Analyzed tweets about the Gillette campaign.</p>
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
             </div>
-            <div class="project-card">
-              <h3>Amazon Collagen Reviews</h3>
-              <p>Sentiment analysis of customer reviews on Amazon.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
-            <!-- Add other projects similarly -->
           </div>
         </div>
       </div>
