@@ -147,10 +147,22 @@
       }
 
       .timeline-promotion {
+        position: relative;
         margin-left: 40px;
+        padding-left: 20px;
         font-size: 0.9rem;
         color: #555;
         font-style: italic;
+      }
+
+      .timeline-promotion::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        width: 2px;
+        height: 100%;
+        background: #60aaff;
       }
 
       .projects {
@@ -234,13 +246,14 @@
           <div class="timeline">
             <div class="timeline-item">
               <h3>Quest Diagnostics</h3>
-              <span>Data Scientist Jan 2020 - Nov 2022</span>
-              <p class="timeline-promotion">Promoted from Data Scientist Intern</p>
-              <span>Intern: Jun 2019 - Aug 2019</span>
+              <span>Data Scientist (Jan 2020 - Nov 2022)</span>
+              <div class="timeline-promotion">
+                Promoted from Data Scientist Intern (Jun 2019 - Aug 2019)
+              </div>
             </div>
             <div class="timeline-item">
               <h3>United Parcel Service (UPS)</h3>
-              <span>Data Scientist Nov 2022 - Sept 2024</span>
+              <span>Data Scientist (Nov 2022 - Sept 2024)</span>
             </div>
           </div>
         </div>
@@ -265,21 +278,6 @@
               <h3>Face Detection Project</h3>
               <p>Performed face detection on AI-generated images.</p>
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Hypertension</h3>
-              <p>Analyzed public health data to predict hypertension.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Used Vehicle Prices</h3>
-              <p>Developed predictive models for used vehicle prices.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Twitter Sentiment Analysis</h3>
-              <p>Analyzed tweets about the Gillette campaign.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
             </div>
           </div>
         </div>
