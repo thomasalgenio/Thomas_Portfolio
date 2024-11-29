@@ -168,7 +168,7 @@
       .projects {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
         justify-items: center;
       }
 
@@ -178,6 +178,7 @@
         font-weight: 600;
         color: #3583f7;
         margin-top: 30px;
+        grid-column: span 2; /* Ensure the header spans both columns */
       }
 
       .project-card {
@@ -230,7 +231,7 @@
 
       @media (max-width: 768px) {
         .projects {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr; /* One column for smaller screens */
         }
       }
     </style>
@@ -293,11 +294,7 @@
               <p>Built unigram sentiment models for Gillette Twitter campaigns.</p>
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
             </div>
-            <div class="project-card">
-              <h3>Amazon Collagen Reviews</h3>
-              <p>Sentiment analysis of customer reviews on Amazon.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
+            <!-- Add other NLP projects -->
           </div>
 
           <!-- Subsection: Classification & Regression Analysis -->
