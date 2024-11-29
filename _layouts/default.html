@@ -169,7 +169,7 @@
         color: #555;
         line-height: 1.5; /* Add spacing between lines */
       }
-      
+
       .project-card:hover {
         transform: translateY(-5px);
         box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
@@ -216,12 +216,10 @@
             <div class="timeline-item">
               <h3>United Parcel Service (UPS)</h3>
               <span>Data Scientist Nov 2022 - Sept 2024</span>
-              <p></p>
               <ul class="hidden-text">
-                <li>Collaborated with International Marketing team to research & manage an in-house Topic Model solution using BERTopic with LLM representation on 200GB of unstructured customer verbatim data reducing operational costs $15K annually.</li>
-                <li>Worked with Competitive & Market Intelligence team to develop an in-house Generative AI application by accurately synthesizing 1TB of unstructured financial data & applying RAG techniques resulting in coherent answers to user questions.</li>
-                <li>Analyzed optimization problem of 10 KPIs for Marketing team, identified non-stochastic constraints, and provided alternative strategies.</li>
-                <li>Analyzed 15 KPIs monthly to Data Analytics & Business Enterprise Business Intelligence team providing insights on impacted delivery density for business use & contributed to script pipeline enhancing efficiency by 2 minutes.</li>
+                <li>Collaborated with International Marketing team to manage an in-house Topic Model solution using BERTopic.</li>
+                <li>Worked with Competitive & Market Intelligence team to develop a Generative AI application.</li>
+                <li>Analyzed 10 KPIs for optimization and provided strategic insights.</li>
               </ul>
               <button class="toggle-btn" onclick="toggleText(this, event)">Read More</button>
             </div>
@@ -230,30 +228,6 @@
               <span>Jan 2020 - Nov 2022</span>
               <p>Data Scientist</p>
             </div>
-            <div class="timeline-item">
-              <h3>Data Scientist Intern</h3>
-              <span>Jun 2019 - Aug 2019</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Science Projects Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('projects')">
-        <div class="bubble-header">Data Science Projects & Contributions</div>
-        <div id="projects" class="bubble-content">
-          <div class="projects">
-            <div class="project-card">
-              <h3>Matching Messy Pandas Columns</h3>
-              <p>Resolved missing edge cases in fuzzy matching logic.</p>
-              <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
-            </div>
-            <div class="project-card">
-              <h3>Face Detection Project</h3>
-              <p>Performed face detection on AI-generated images.</p>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
-            </div>
-            <!-- Add more project cards as needed -->
           </div>
         </div>
       </div>
@@ -269,15 +243,16 @@
         bubble.style.display = bubble.style.display === "block" ? "none" : "block";
       }
       
-      function toggleText(button) {
+      function toggleText(button, event) {
         const hiddenText = button.previousElementSibling;
         if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-          hiddenText.style.display = "block"; // Show the content
-          button.textContent = "Show Less"; // Change button text
+          hiddenText.style.display = "block";
+          button.textContent = "Show Less";
         } else {
-          hiddenText.style.display = "none"; // Hide the content
-          button.textContent = "Read More"; // Change button text
+          hiddenText.style.display = "none";
+          button.textContent = "Read More";
         }
+        event.stopPropagation(); // Prevents toggling the parent bubble
       }
     </script>
   </body>
