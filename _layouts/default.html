@@ -123,6 +123,22 @@
         margin-bottom: 20px;
       }
 
+      .arrow {
+        width: 20px;
+        height: 2px;
+        background-color: #60aaff; /* Arrow color */
+        position: relative;
+      }
+      
+      .arrow::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        right: -6px;
+        border: 6px solid transparent;
+        border-left: 6px solid #60aaff; /* Arrowhead color */
+      }
+      
       .timeline-item::before {
         content: '';
         position: absolute;
@@ -268,13 +284,14 @@
           <div class="timeline">
             <div class="timeline-item">
               <h3>United Parcel Service (UPS)</h3>
-              <span>Data Scientist (Nov 2022 - Sept 2024)</span>
+              <span><strong>Data Scientist</strong> <em>(Nov 2022 - Sept 2024)</em></span>
             </div>
             <div class="timeline-item">
               <h3>Quest Diagnostics</h3>
-              <span>Data Scientist (Jan 2020 - Nov 2022)</span>
+              <span><strong>Data Scientist</strong> <em>(Jan 2020 - Nov 2022)</em></span>
+              <div class="arrow"></div>
               <div class="timeline-promotion">
-                <span>Data Scientist Intern (Jun 2019 - Aug 2019)</span>
+                <span><strong>Data Scientist Intern</strong> <em>(Jun 2019 - Aug 2019)</em></span>
               </div>
             </div>            
           </div>
