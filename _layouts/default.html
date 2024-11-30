@@ -100,6 +100,19 @@
         border-radius: 15px;
       }
 
+      .company-container {
+        display: flex;
+        align-items: left;
+        gap: 10px; /* Space between image and text */
+      }
+      
+      .company-logo {
+        width: 40px; /* Set logo size */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add space between the image and text */
+        vertical-align: left; /* Align image with the text */
+      }
+      
       .timeline {
         text-align: left;
         margin: 10px 0;
@@ -121,22 +134,6 @@
         position: relative;
         padding-left: 20px;
         margin-bottom: 20px;
-      }
-
-      .arrow {
-        width: 20px;
-        height: 2px;
-        background-color: #60aaff; /* Arrow color */
-        position: relative;
-      }
-      
-      .arrow::after {
-        content: '';
-        position: absolute;
-        top: -4px;
-        right: -6px;
-        border: 6px solid transparent;
-        border-left: 6px solid #60aaff; /* Arrowhead color */
       }
       
       .timeline-item::before {
@@ -273,14 +270,19 @@
         <div id="experience" class="bubble-content">
           <div class="timeline">
             <div class="timeline-item">
-              <h3>United Parcel Service (UPS)</h3>
-              <span><strong>Data Scientist</strong> <em>(Nov 2022 - Sept 2024)</em></span>
+              <div class="company-container">
+                <img src="path-to-ups-logo.png" alt="UPS Logo" class="company-logo">              
+                <h3>United Parcel Service (UPS)</h3>
+              </div>
+              <span><strong>Data Scientist</strong> <em>Nov 2022 - Sept 2024</em></span>
             </div>
             <div class="timeline-item">
-              <h3>Quest Diagnostics</h3>
-              <span><strong>Data Scientist</strong> <em>(Jan 2020 - Nov 2022)</em></span>
-              <div class="arrow"></div>
-                <span><strong>Data Scientist Intern</strong> <em>(Jun 2019 - Aug 2019)</em></span>
+              <div class="company-container">
+                <img src="images/lab-3.png" alt="UPS Logo" class="company-logo">    
+                <h3>Quest Diagnostics</h3>
+              </div>
+              <span><strong>Data Scientist</strong> <em>Jan 2020 - Nov 2022</em></span>
+              <span><strong>Data Scientist Intern</strong> <em>Jun 2019 - Aug 2019</em></span>
               </div>
             </div>            
           </div>
