@@ -1,6 +1,7 @@
 # Welcome to My Portfolio
 
 Hello! Welcome to my portfolio. Below you'll find highlights of my contributions, projects, and analyses.
+You can also view it on this website: [View Website]https://thomasalgenio.github.io/Thomas_Portfolio/
 
 ---
 
