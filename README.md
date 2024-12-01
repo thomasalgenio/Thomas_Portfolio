@@ -43,7 +43,7 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp)
 
 - **Amazon Preworkout Reviews**
-  - Analyzed preworkout product reviews from Amazon using NLP.
+  - Analyzed preworkout product reviews on Amazon using NLP.
   - Extracted insights to improve customer experience.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
 
