@@ -62,8 +62,8 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
 ---
 
 ### Classification & Regression Analysis
-- **Predicting Hypertension**
-  - Engineered public health data to predict hypertension risks.
+- **Predicting Hypertension & Visualizing Insights**
+  - Analyzed public health data to predict hypertension risks.
   - Applied models like Logistic Regression and XGBoost.
   - Provided actionable insights for healthcare professionals.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction)
@@ -73,12 +73,6 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
   - Applied machine learning techniques including Random Forest and XGBoost.
   - Engineered features to refine prediction accuracy.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction)
-
-- **Hypertension Insights**
-  - Analyzed public health data for insights on hypertension.
-  - Provided feature importance analysis using XGBoost models.
-  - Suggested actionable recommendations for healthcare professionals.
-  - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction)
  
 - **Predicting Bank Loan Approval**
   - Developed predictive models to assess bank loan approvals.
@@ -87,13 +81,13 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction)
 
 - **Predicting Diamond Prices**
-  - Built regression models to predict diamond prices.
+  - Predicted diamond prices using regression models.
   - Engineered features to improve price prediction accuracy.
   - Applied advanced regression techniques.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction)
 
 - **Predicting Home Prices**
-  - Analyzed real estate data to predict home prices.
-  - Built regression models using Random Forest and XGBoost.
+  - Analyzed real estate data to predict home prices accurately.
   - Engineered key features to enhance model performance.
+  - Built regression models using Random Forest and XGBoost.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction)
