@@ -32,7 +32,7 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon)
 
 - **Twitter Gillette Unigram Model**
-  - Created unigram sentiment models for analyzing Twitter campaigns.
+  - Built unigram sentiment models for analyzing Twitter campaigns.
   - Extracted detailed insights into social responses to Gillette ads.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
 
