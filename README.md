@@ -37,8 +37,8 @@ You can also view it here: https://thomasalgenio.github.io/Thomas_Portfolio/
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette)
 
 - **Yelp Restaurant Reviews**
-  - Scraped Yelp reviews for restaurant data.
   - Applied sentiment analysis using advanced NLP techniques.
+  - Scraped Yelp reviews for restaurant data.
   - Derived insights to help restaurant owners understand customer satisfaction.
   - [View Project](https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp)
 
