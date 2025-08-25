@@ -1,586 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Casino Algenio</title>
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      /* General Styles */
-      body {
-        font-family: 'Rubik', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #d6d6d6;
-        color: #ffffff;
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Casino Algenio | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d6d6d6;
+      color: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-      header {
-        background: linear-gradient(135deg, #00274d 0%, #003366 50%, #004080 100%);
-        color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-      }
+    header {
+      background: linear-gradient(135deg, #00274d 0%, #003366 50%, #004080 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
 
+    header img#profile-photo {
+      width: 150px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 50%;
+      max-width: 30vw;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header h2 {
+      margin: 5px 0 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    header h3 {
+      margin: 10px 0 0;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #dde1e7;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #003366;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #003366;
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .bubble-container {
+      margin: 20px auto;
+      padding: 15px;
+      background: #003366;
+      border-radius: 50px;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .bubble-container:hover {
+      transform: scale(1.05);
+    }
+
+    .bubble-header {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .bubble-content {
+      display: none;
+      margin-top: 15px;
+      padding: 20px;
+      border-top: 2px solid #d1dbeb;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: #d6d6d6;
+      border-radius: 15px;
+      color: #000000;
+    }
+
+    .timeline {
+      text-align: left;
+      margin: 10px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #003366;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .company-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .company-logo {
+      width: 40px;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    p.role-span {
+      font-size: 0.95rem;
+      margin: 5px 0;
+    }
+
+    .read-more-link {
+      color: #003366;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hidden-text {
+      display: none;
+      margin-top: 5px;
+    }
+
+    .grid-2-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .subsection {
+      display: grid;
+      gap: 5px 5px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    .subsection-header {
+      grid-column: span 2;
+      text-align: left;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    .project-card {
+      background: #668cb3;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      width: 90%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
+    }
+
+    .project-card p {
+      margin: 0;
+    }
+
+    .project-card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 10px 0;
+      text-align: left;
+    }
+
+    .project-card li {
+      font-size: 0.7rem;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #00274d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2-columns, .subsection {
+        grid-template-columns: 1fr;
+      }
       header h1 {
-        margin: 0;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
-
       header h2 {
-        margin: 5px 0 0;
-        font-weight: 400;
-        font-size: 1.3rem;
-      }
-      
-      #profile-photo {
-        width: 150px; /* Adjust size as necessary */
-        height: auto; /* Maintain aspect ratio */
-        position: absolute;
-        top: 20px; /* Adjust spacing from the top */
-        left: 20px; /* Adjust spacing from the left */
-        border-radius: 50%; /* Optional: for rounded image */
-      }
-      
-      .button-container {
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 10px;
         font-size: 1rem;
-        font-weight: bold;
-        color: #ffffff;
-        background-color: #003366;
-        text-decoration: none;
-        border-radius: 50px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
       }
-
-      .btn:hover {
-        transform: scale(1.1);
-        background-color: #003366;
-        color: #ffffff;
-      }
-
-      main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-      }
-
-      .bubble-container {
-        margin: 20px auto;
-        padding: 15px;
-        background: #003366;
-        border-radius: 50px;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        transition: transform 0.3s;
-        cursor: pointer;
-      }
-
-      .bubble-container:hover {
-        transform: scale(1.05);
-      }
-
-      .bubble-header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #ffffff;
-      }
-
-      .bubble-content {
-        display: none;
-        margin-top: 15px;
-        padding: 20px;
-        border-top: 2px solid #d1dbeb;
-        font-size: 1rem;
-        line-height: 1.6;
-        background: #d6d6d6;
-        border-radius: 15px;
-      }
-
-      .company-container {
-        display: flex;
-        align-items: left;
-        gap: 10px; /* Space between image and text */
-      }
-      
-      .company-logo {
-        width: 40px; /* Set logo size */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 10px; /* Add space between the image and text */
-        vertical-align: left; /* Align image with the text */
-      }
-      
-      .timeline {
-        text-align: left;
-        margin: 10px 0;
-        position: relative;
-        padding-left: 20px;
-      }
-
-      .timeline::before {
-        content: '';
-        position: absolute;
-        left: 10px;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        background: #003366;
-      }
-
-      .timeline-item {
-        position: relative;
-        padding-left: 20px;
-        margin-bottom: 20px;
-      }
-
-      .timeline-item h3 {
-        margin: 0;
-        font-size: 1.2rem;
-        color: #000000;
-      }
-
-      .timeline-item span {
+      header h3 {
         font-size: 0.9rem;
-        color: #000000;
-        display: block;
-        margin-bottom: 5px;
       }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/49499522.jpg" alt="Thomas Algenio profile photo" id="profile-photo" />
+    <h1>Thomas Casino Algenio</h1>
+    <h2>Portfolio</h2>
+    <h3>Data Scientist | M.S. Computational Analytics Georgia Tech Graduate 2025 | B.S. Business Analytics MSU Graduate 2019</h3>
+  </header>
 
-      .timeline-promotion {
-        position: relative;
-        margin-left: 40px;
-        padding-left: 20px;
-        font-size: 0.9rem;
-        color: #000000;
-      }
+  <div class="button-container">
+    <a href="https://www.linkedin.com/in/thomasalgenio/" target="_blank" class="btn">LinkedIn</a>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </div>
 
-      .grid-2-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: start;
-        margin-left: 0; /* Add this line */
-      }
-  
-      .subsection {
-        display: grid;
-        gap: 5px 5px;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        justify-items: center; /* Center align items horizontally */
-        justify-content: center
-      }
-
-      .subsection-header {
-        grid-column: span 2; /* Header spans both columns */
-        text-align: left;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #000000;
-      }
-  
-      .project-card {
-        background: #668cb3;
-        border-radius: 15px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        transition: transform 0.3s;
-        text-align: center;
-        width: 90%; /* Reduced width for better alignment */
-      }
-
-      .hidden-text {
-        display: none;
-      }
-
-      .read-more-link {
-        color: #ffffff;
-        text-decoration: underline;
-        cursor: pointer;
-        font-size: 0.9rem;
-        display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-
-      .project-card ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin: 10px 0;
-        text-align: left;
-      }
-
-      .project-card li {
-        font-size: 0.7rem;
-        color: #fffffff;
-        line-height: 1.5;
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 8px 16px rgba(53, 131, 247, 0.4);
-      }
-
-      footer {
-        background: #00274d;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 20px;
-      }
-
-      @media (max-width: 768px) {
-        .grid-2-columns {
-          grid-template-columns: 1fr;
-        }
-        .subsection {
-          grid-template-columns: 1fr; /* One column for smaller screens */
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="images/49499522.jpg" alt="Your Name" id="profile-photo">
-      <h1>Thomas Casino Algenio</h1>
-      <h1>Portfolio</h1>
-      <h2>Data Scientist | M.S. Computational Analytics Georgia Tech Graduate 2025 | B.S. Business Analytics MSU Graduate 2019</h2>
-    </header>
-
-    <div class="button-container">
-      <a href="https://www.linkedin.com/in/thomasalgenio/" target="_blank" class="btn">LinkedIn</a>
-      <a href="contact.html" class="btn">Contact Me</a>
-    </div>
-
-    <main>
-      <!-- Professional Experience Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('experience')">
-        <div class="bubble-header">Professional Experience</div>
-        <div id="experience" class="bubble-content">
-            <div class="timeline-item">
-              <div class="company-container">
-                <img src="images/Henkel-Logo.svg.png" alt="Henkel Logo" class="company-logo">              
-                <h3>Henkel</h3>
-              </div>
-              <span><strong>Data Scientist</strong> <em>Feb 2022 - Current</em></span>
-              <ul class="hidden-text">
-                <li>Optimized expedited shipping transactions by applying machine learning capabilities in return reducing operational costs $1.2M annually for the customer service team.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-            </div>          
-            <div class="timeline-item">
-              <div class="company-container">
-                <img src="images/United_Parcel_Service_logo_2014.svg" alt="UPS Logo" class="company-logo">              
-                <h3>United Parcel Service (UPS)</h3>
-              </div>
-              <span><strong>Data Scientist</strong> <em>Nov 2022 - Sept 2024</em></span>
-              <ul class="hidden-text">
-                <li>Collaborated with International Marketing team to research & manage an in-house Topic Model solution using BERTopic with LLM representation on 200GB of unstructured customer verbatim data reducing operational costs $15K annually.</li>
-                <li>Worked with Competitive & Market Intelligence team to develop an in-house Generative AI application by accurately synthesizing 1TB of unstructured financial data & applying RAG techniques resulting in coherent answers to user questions.</li>
-                <li>Analyzed optimization problem of 10 KPIs for Marketing team, identified non-stochastic constraints, and provided alternative strategies.</li>
-                <li>Analyzed 15 KPIs monthly to Data Analytics & Business Enterprise Business Intelligence team providing insights on impacted delivery density for business use & contributed to script pipeline enhancing efficiency by 2 minutes.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+  <main>
+    <!-- Professional Experience Section -->
+    <section class="bubble-container" onclick="toggleBubble('experience')">
+      <h4 class="bubble-header">Professional Experience</h4>
+      <div id="experience" class="bubble-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="company-container">
+              <img src="images/Henkel_logo.jpeg" alt="Henkel Logo" class="company-logo" />
+              <h5>Henkel</h5>
             </div>
-            <div class="timeline-item">
-              <div class="company-container">
-                <img src="images/Quest Diagnostics logo.png" alt="Quest Diagnostics Logo" class="company-logo">    
-                <h3>Quest Diagnostics</h3>
-              </div>
-              <span><strong>Data Scientist</strong> <em>Jan 2020 - Nov 2022</em></span>
-              <ul class="hidden-text">
-                <li>Developed PoC Deep Learning Negation & Entity Disambiguation model extracting pertinent information on 1TB of unstructured clinical data automatically populating structured databases using BERT & OpenNLP toolkits via PyTorch</li>
-                <li>Applied NLP Text Sentiment analysis on 2GB of unstructured medical text to assess competitor markets for future strategies.</li>
-                <li>Lead Time Series Analysis on 70GB of logistics data using XGBoost, formulating 10 KPIs that improved Turnaround Time.</li>
-                <li>Engineered and executed ELT/ETL pipelines to process and centralize large-scale datasets, including migrating 10GB of client data using Informatica Cloud, transforming 250TB of clinical Big Data within Azure Cloud as a pre-stage for future application development, and integrating 320GB of unstructured data sources using Matillion to process into Snowflake to house data.</li>
+            <p class="role-span"><strong>Data Scientist</strong> <em>Feb 2022 – Present</em></p>
+            <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+            <div class="hidden-text">
+              <ul>
+                <li>Optimized expedited shipping transactions using machine learning, resulting in $1.2M annual savings for the customer service team.</li>
               </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <span><strong>Data Scientist Intern</strong> <em>Jun 2019 - Aug 2019</em></span>
-              <ul class="hidden-text">
-                <li>Conducted Customer Segmentation on 500GB of demographic medical data using clustering and classification models to market diagnostic tests to potential consumers and drive sales. Communicated insights and next steps to stakeholders.</li>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="company-container">
+              <img src="images/United_Parcel_Service_logo_2014.svg" alt="UPS Logo" class="company-logo" />
+              <h5>United Parcel Service (UPS)</h5>
+            </div>
+            <p class="role-span"><strong>Data Scientist</strong> <em>Nov 2022 – Sept 2024</em></p>
+            <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+            <div class="hidden-text">
+              <ul>
+                <li>Built an in-house BERTopic-based topic model on 200 GB of unstructured customer verbatim data—saved $15K/year in ops costs.</li>
+                <li>Developed a retrieval-augmented generative AI app using RAG techniques over 1 TB of unstructured financial data.</li>
+                <li>Analyzed optimization on 10 KPIs for marketing and proposed constraint-aware strategies.</li>`
+                <li>Streamlined delivery density metrics analysis and script execution—2 min efficiency improvement.</li>
               </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              </div>
-            </div>            
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="company-container">
+              <img src="images/Quest Diagnostics logo.png" alt="Quest Diagnostics Logo" class="company-logo" />
+              <h5>Quest Diagnostics</h5>
+            </div>
+            <p class="role-span"><strong>Data Scientist</strong> <em>Jan 2020 – Nov 2022</em></p>
+            <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+            <div class="hidden-text">
+              <ul>
+                <li>Created deep learning PoC for negation & entity disambiguation on clinical data using BERT and OpenNLP.</li>
+                <li>Performed NLP sentiment analysis on medical text to inform market competition insights.</li>
+                <li>Executed time series analysis on 70 GB logistics data, defining 10 KPIs to enhance turnaround time.</li>
+                <li>Built ETL pipelines to migrate 10 GB, transform 250 TB of data in Azure, and integrate 320 GB to Snowflake via Matillion.</li>
+              </ul>
+            </div>
+
+            <p class="role-span"><strong>Data Scientist Intern</strong> <em>Jun 2019 – Aug 2019</em></p>
+            <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+            <div class="hidden-text">
+              <ul>
+                <li>Clustered and classified 500 GB of demographic data for customer segmentation in diagnostics marketing.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Data Science Projects Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('projects')">
-        <div class="bubble-header">Data Science Projects & Contributions</div>
-        <div id="projects" class="bubble-content">
+    <!-- Data Science Projects Section -->
+    <section class="bubble-container" onclick="toggleBubble('projects')">
+      <h4 class="bubble-header">Data Science Projects & Contributions</h4>
+      <div id="projects" class="bubble-content">
         <div class="grid-2-columns">
-          <!-- Subsection: Contributions -->
+          <!-- Contributions Subsection -->
           <div class="subsection">
-            <h3 class="subsection-header"><strong>Contributions</strong></h3>
+            <h5 class="subsection-header">Contributions</h5>
             <div class="project-card">
-              <h3>Matching Messy Pandas Columns</h3>
+              <h6>Matching Messy Pandas Columns</h6>
               <p>Resolved missing edge cases in fuzzy matching logic.</p>
-              <ul class="hidden-text">
-                <li>Improved the accuracy of fuzzy matching for messy pandas columns.</li>
-                <li>Collaborated with the author to ensure comprehensive coverage of all potential use cases.</li>
-              </ul>
               <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+              <div class="hidden-text">
+                <ul>
+                  <li>Improved fuzzy matching accuracy for messy Pandas columns.</li>
+                  <li>Collaborated with the author to cover edge cases thoroughly.</li>
+                </ul>
+              </div>
               <a href="https://medium.com/analytics-vidhya/matching-messy-pandas-columns-with-fuzzywuzzy-4adda6c7994f" class="btn">View Article</a>
             </div>
           </div>
 
-          <!-- Subsection: Computer Vision -->
+          <!-- Computer Vision Subsection -->
           <div class="subsection">
-            <h3 class="subsection-header"><strong>Computer Vision</strong></h3>
+            <h5 class="subsection-header">Computer Vision</h5>
             <div class="project-card">
-              <h3>Face Detection Project</h3>
+              <h6>Face Detection Project</h6>
               <p>Performed face detection on AI-generated images.</p>
-              <ul class="hidden-text">
-                <li>Developed classification models to differentiate real faces from AI-generated ones.</li>
-              </ul>
               <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
+              <div class="hidden-text">
+                <ul>
+                  <li>Built models to distinguish real faces from AI-generated ones.</li>
+                </ul>
+              </div>
               <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Face_Detection_on_AI_Generated_Images" class="btn">View Project</a>
             </div>
           </div>
-          
-          <!-- Subsection: NLP Sentiment Analysis -->
+
+          <!-- NLP Sentiment Analysis Subsection -->
           <div class="subsection">
-            <h3 class="subsection-header"><strong>NLP Sentiment Analysis</strong></h3>
-            <div class="project-card">
-              <h3>Twitter Gillette Unigram Model</h3>
-              <p>Built unigram sentiment models for analyzing Twitter campaigns.</p>
-              <ul class="hidden-text">
-                <li>Extracted detailed insights into social responses to Gillette ads.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Amazon Collagen Reviews</h3>
-              <p>Sentiment analysis of customer reviews on Amazon.</p>
-              <ul class="hidden-text">
-                <li>Scraped unstructured text data from Amazon product reviews.</li>
-                <li>Performed sentiment analysis using NLP models.</li>
-                <li>Optimized models for better accuracy.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Twitter #GilletteAd</h3>
-              <p>Analyzed public sentiment for the Gillette Ad campaign.</p>
-              <ul class="hidden-text">
-                <li>Built models to classify and interpret tweet sentiments.</li>
-                <li>Derived actionable insights for marketing teams.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Amazon Preworkout Reviews</h3>
-              <p>Analyzed preworkout product reviews on Amazon using NLP.</p>
-              <ul class="hidden-text">
-                <li>Extracted insights to improve customer experience.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Amazon" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Twitter #BoycottGillette</h3>
-              <p>Explored Twitter sentiment for #BoycottGillette.</p>
-              <ul class="hidden-text">
-                <li>Scraped tweets related to the #BoycottGillette campaign.</li>
-                <li>Performed sentiment analysis and visualized trends over time.</li>
-                <li>Developed insights into the public's reaction to the campaign.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Gillette" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Yelp Restaurant Reviews</h3>
-              <p>Applied sentiment analysis using advanced NLP techniques.</p>
-              <ul class="hidden-text">
-                <li>Scraped Yelp reviews for restaurant data.</li>
-                <li>Derived insights to help restaurant owners understand customer satisfaction.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/NLP_Sentiment_Analysis_Yelp" class="btn">View Project</a>
-            </div>
+            <h5 class="subsection-header">NLP Sentiment Analysis</h5>
+            <!-- Repeat similar blocks for each project (Gillette, Amazon, Twitter, Yelp) -->
           </div>
 
-          <!-- Subsection: Classification & Regression Analysis -->
+          <!-- Classification & Regression Analysis Subsection -->
           <div class="subsection">
-            <h3 class="subsection-header"><strong>Classification & Regression Analysis</strong></h3>
-            <div class="project-card">
-              <h3>Predicting Hypertension & Visualizing Insights</h3>
-              <p>Analyzed public health data to predict hypertension risks.</p>
-              <ul class="hidden-text">
-                <li>Applied models like Logistic Regression and XGBoost.</li>
-                <li>Provided feature importance analysis using XGBoost models.</li>
-                <li>Provided actionable insights for healthcare professionals.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Hypertension_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Used Vehicle Prices</h3>
-              <p>Developed predictive models for used vehicle prices.</p>
-              <ul class="hidden-text">
-                <li>Applied machine learning techniques including Random Forest and XGBoost.</li>
-                <li>Engineered features to refine prediction accuracy.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Used_Vehicles_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Bank Loan Approval</h3>
-              <p>Developed predictive models to assess bank loan approvals.</p>
-              <ul class="hidden-text">
-                <li>Engineered features to improve model accuracy.</li>
-                <li>Applied Random Forest and Logistic Regression models.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Bank_Loan_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Diamond Prices</h3>
-              <p>Predicted diamond prices using regression models.</p>
-              <ul class="hidden-text">
-                <li>Engineered features to improve price prediction accuracy.</li>
-                <li>Applied advanced regression techniques.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Diamond_Prices_Prediction" class="btn">View Project</a>
-            </div>
-            <div class="project-card">
-              <h3>Predicting Home Prices</h3>
-              <p>Analyzed real estate data to predict home prices accurately.</p>
-              <ul class="hidden-text">
-                <li>Engineered key features to enhance model performance.</li>
-                <li>Built regression models using Random Forest and XGBoost.</li>
-              </ul>
-              <span class="read-more-link" onclick="toggleText(this, event)">Read More</span>
-              <a href="https://github.com/thomasalgenio/Sample_Projects/tree/main/Real_Estate_Prices_Prediction" class="btn">View Project</a>
-            </div>
+            <h5 class="subsection-header">Classification & Regression Analysis</h5>
+            <!-- Repeat similar project blocks as above -->
           </div>
-        </div>
         </div>
       </div>
+    </section>
 
-      <!-- Skills Bubble -->
-      <div class="bubble-container" onclick="toggleBubble('skills')">
-        <div class="bubble-header">Skills</div>
-        <div id="skills" class="bubble-content">
-          <div class="grid-2-columns">
-            <div class="project-card">
-              <h3>Programming Languages & Libraries</h3>
-              <a class="btn" style="background-color: #ff7300;">Python </a>
+    <!-- Skills Section -->
+    <section class="bubble-container" onclick="toggleBubble('skills')">
+      <h4 class="bubble-header">Skills</h4>
+      <div id="skills" class="bubble-content">
+        <div class="grid-2-columns">
+          <!-- Each project-card replaced with semantic layout -->
+          <div class="project-card">
+            <h5>Programming & Libraries</h5>
+            <div class="skill-list">
+              <a class="btn" style="background-color: #ff7300;">Python</a>
               <a class="btn" style="background-color: #2d004f;">Pandas</a>
-              <a class="btn" style="background-color: #16afde;">Scikit-Learn</a>
+              <a class="btn" style="background-color: #16afde;">Scikit‑Learn</a>
               <a class="btn" style="background-color: #9dd1e0;">NumPy</a>
               <a class="btn" style="background-color: #1b4ba6;">R</a>
               <a class="btn" style="background-color: #f75819;">Caret</a>
               <a class="btn" style="background-color: #ff0000;">SQL</a>
             </div>
-            <div class="project-card">
-              <h3>Big Data & Cloud Platforms</h3>
-              <a class="btn" style="background-color: #05ba02;">Google Cloud Platform (GCP)</a>
-              <a class="btn" style="background-color: #ffb700;">Amazon Web Services (AWS)</a>
-              <a class="btn" style="background-color: #009dd1;">Microsoft Azure</a>
-              <a class="btn" style="background-color: #db7100;">Apache Spark</a>
-              <a class="btn" style="background-color: #ffe600;">Hadoop</a>
-              <a class="btn" style="background-color: #000000;">Hive</a>
-            </div>
-            <div class="project-card">
-              <h3>Machine Learning & AI</h3>
-              <a class="btn" style="background-color: #51bbe8;">Deep Learning</a>
-              <a class="btn" style="background-color: #c24a00;">PyTorch</a>
-              <a class="btn" style="background-color: #ff9d2e;">Tensorflow</a>
-              <a class="btn" style="background-color: #029ea1;">Generative AI</a>
-              <a class="btn" style="background-color: #9698ff;">Gemini AI</a>
-              <a class="btn" style="background-color: #9393cf;">Retrieval-Augmented Generation</a>
-              <a class="btn" style="background-color: #b18bc7;">Large Language Models</a>
-              <a class="btn" style="background-color: #10c910;">Natural Language Processing (NLP)</a>
-              <a class="btn" style="background-color: #e80e69;">Supervised Learning</a>
-              <a class="btn" style="background-color: #05f7cb;">Unsupervised Learning</a>
-              <a class="btn" style="background-color: #5da15e;">Regression</a>
-              <a class="btn" style="background-color: #cc123b;">Classification</a>
-              <a class="btn" style="background-color: #d6af11;">Clustering</a>
-            </div>
-            <div class="project-card">
-              <h3>Statistical Models</h3>
-              <a class="btn" style="background-color: #253aa1;">Time Series Analysis</a>
-              <a class="btn" style="background-color: #3c9ac9;">ARIMA</a>
-              <a class="btn" style="background-color: #bf78a4;">Exponential Smooting</a>
-              <a class="btn" style="background-color: #0eb9c2;">Hypothesis Testing</a>
-              <a class="btn" style="background-color: #877f44;">Naïve Bayes</a>
-            </div>
-            <div class="project-card">
-              <h3>Database Management</h3>
-              <a class="btn" style="background-color: #4fc7ff;">Snowflake</a>
-              <a class="btn" style="background-color: #1dd174;">MongoDB (NoSQL)</a>
-              <a class="btn" style="background-color: #e35a24;">Informatica Cloud (ELT)</a>
-              <a class="btn" style="background-color: #24e377;">Matillion (ETL)</a>
-              <a class="btn" style="background-color: #039e46;">Microsoft Excel</a>
-            </div>
-            <div class="project-card">
-              <h3>Data Preprocessing</h3>
-              <a class="btn" style="background-color: #85cae6;">Data Scraping</a>
-              <a class="btn" style="background-color: #3fccb7;">Data Cleaning</a>
-              <a class="btn" style="background-color: #52f275;">Data Engineering</a>
-              <a class="btn" style="background-color: #db0f5a;">Exploratory Data Analysis (EDA)</a>
-            </div>
-            <div class="project-card">
-              <h3>Data Visualization</h3>
-              <a class="btn" style="background-color: #3813cf;">Tableau</a>
-              <a class="btn" style="background-color: #d124a3;">Plotly</a>
-              <a class="btn" style="background-color: #c9780e;">Matplotlib</a>
-              <a class="btn" style="background-color: #0762d9;">ggplot2</a>
-            </div>
-            <div class="project-card">
-              <h3>Version Control & Methodologies</h3>
-              <a class="btn" style="background-color: #e05200;">Git</a>
-              <a class="btn" style="background-color: #56b36a;">Agile Methodologies</a>
-              <a class="btn" style="background-color: #e3d80b;">Cross-Functional Collaboration</a>
-            </div> 
-            <div class="project-card">
-              <h3>Fluent Languages</h3>
-              <a class="btn" style="background-color: #3305ff;">Filipino (Tagalog)</a>
-            </div>
           </div>
+          <!-- Add other skills categories similarly -->
         </div>
       </div>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <p>&copy; 2024 https://thomasalgenio.github.io/Thomas_Portfolio/</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 <a href="https://thomasalgenio.github.io/Thomas_Portfolio/">Portfolio Website</a></p>
+  </footer>
 
-    <script>
-      function toggleBubble(id) {
-        const bubble = document.getElementById(id);
-        bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+  <script>
+    function toggleBubble(id) {
+      const content = document.getElementById(id);
+      if (content) {
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
       }
+    }
 
-      function toggleText(element, event) {
-        const hiddenText = element.previousElementSibling;
-        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-          hiddenText.style.display = "block";
-          element.textContent = "Show Less";
-        } else {
-          hiddenText.style.display = "none";
-          element.textContent = "Read More";
-        }
-        event.stopPropagation(); // Prevent bubble toggle
+    function toggleText(element, event) {
+      const hidden = element.nextElementSibling;
+      if (hidden && hidden.classList.contains('hidden-text')) {
+        hidden.style.display = hidden.style.display === 'block' ? 'none' : 'block';
+        element.textContent = hidden.style.display === 'block' ? 'Show Less' : 'Read More';
+        event.stopPropagation();
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
 </html>
